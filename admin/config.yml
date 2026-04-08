@@ -1,14 +1,9 @@
 backend:
-  name: github
-  repo: YOUR_GITHUB_USERNAME/trident-industries
+  name: git-gateway
   branch: main
 
-# Allow image uploads directly to the assets folder
 media_folder: assets
 public_folder: assets
-
-# Use Netlify Identity for login
-local_backend: false
 
 collections:
 
