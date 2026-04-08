@@ -1,0 +1,23 @@
+{
+  "page_label": "Our Work",
+  "page_title": "Parts Gallery",
+  "page_description": "A selection of components manufactured at Trident Industries — from production CNC runs to complex additive parts.",
+  "items": [
+    {"image": "assets/printed-housing.jpg", "label": "3D Printed Housing"},
+    {"image": "assets/control-arm.jpg", "label": "Vehicle Control Arm"},
+    {"image": "assets/brackets-polished.jpg", "label": "Machined Brackets"},
+    {"image": "assets/cnc-housings.jpg", "label": "CNC Housings — Production Run"},
+    {"image": "assets/hero.jpg", "label": "CNC Intake Manifold"},
+    {"image": "assets/printed-fairing.jpg", "label": "3D Printed Fairing"},
+    {"image": "assets/machined-bracket.jpg", "label": "Structural Bracket"},
+    {"image": "assets/brackets-flat.jpg", "label": "Aluminum Brackets"},
+    {"image": "assets/shop-floor.jpg", "label": "Our Facility"},
+    {"image": "assets/small-brackets.jpg", "label": "Precision Brackets"},
+    {"image": "assets/intake-batch.jpg", "label": "Batch Production"},
+    {"image": "assets/brackets-standing.jpg", "label": "CNC Machined Parts"},
+    {"image": "assets/green-bracket.jpg", "label": "Coated Structural Bracket"},
+    {"image": "assets/missile-flight.jpg", "label": "Naval — In Flight"},
+    {"image": "assets/missile-hangar.jpg", "label": "Naval — Hangar Assembly"},
+    {"image": "assets/missile-loaded.jpg", "label": "Naval — Wing-Mounted"}
+  ]
+}

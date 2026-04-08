@@ -1,0 +1,77 @@
+{
+  "page_label": "What We Do",
+  "page_title": "Our Capabilities",
+
+  "services": [
+    {
+      "id": "cnc",
+      "number": "01",
+      "label": "CNC Milling",
+      "title": "3, 4 & 5-Axis CNC Milling",
+      "description": "Multi-axis machining for the most demanding components in aerospace, defense, and automotive. Our facility runs Haas vertical machining centers capable of complex simultaneous 5-axis operations, enabling tight-tolerance work on titanium, aluminum, Inconel, and stainless steel.",
+      "specs": [
+        {"label": "Axes", "value": "3-Axis, 4-Axis, 5-Axis simultaneous"},
+        {"label": "Tolerance", "value": "±0.0001\" on critical features"},
+        {"label": "Materials", "value": "Aluminum, Titanium, Inconel, Stainless, Steel"},
+        {"label": "Volume", "value": "Prototype through production runs"}
+      ],
+      "image": "assets/cnc-housings.jpg"
+    },
+    {
+      "id": "printing",
+      "number": "02",
+      "label": "Additive Manufacturing",
+      "title": "Metal & Polymer 3D Printing",
+      "description": "Additive manufacturing extends what's possible — internal cooling channels, lattice-optimized structures, and organic geometries that no CNC can reach. We produce metal parts in stainless, titanium, and Inconel alongside high-performance polymer components.",
+      "specs": [
+        {"label": "Processes", "value": "DMLS, SLS, FDM, SLA"},
+        {"label": "Metals", "value": "316L, Ti-6Al-4V, Inconel 718"},
+        {"label": "Polymers", "value": "Nylon, PEEK, Ultem, ABS, Carbon Fiber"},
+        {"label": "Applications", "value": "Prototype, functional, flight-ready components"}
+      ],
+      "image": "assets/printed-housing.jpg"
+    },
+    {
+      "id": "scanning",
+      "number": "03",
+      "label": "3D Scanning",
+      "title": "High-Accuracy 3D Scanning",
+      "description": "Structured light and laser scanning systems capture full-field surface geometry at micron-level accuracy. Used for incoming inspection, first-article validation, and as the starting point for reverse engineering workflows.",
+      "specs": [
+        {"label": "Technology", "value": "Structured light, laser scanning"},
+        {"label": "Accuracy", "value": "±0.005mm across full surface"},
+        {"label": "Output", "value": "Point cloud, mesh, deviation reports"},
+        {"label": "Use Cases", "value": "Inspection, reverse engineering, QA"}
+      ],
+      "image": "assets/small-brackets.jpg"
+    },
+    {
+      "id": "reverse",
+      "number": "04",
+      "label": "Reverse Engineering",
+      "title": "Reverse Engineering",
+      "description": "We reconstruct legacy, obsolete, or competitor components into fully parametric CAD models — ready to machine, modify, or improve. Starting from scan data, physical measurements, or worn originals, we deliver production-ready documentation.",
+      "specs": [
+        {"label": "Input", "value": "Physical part, scan data, drawings"},
+        {"label": "Output", "value": "Parametric CAD, GD&T drawings, toolpaths"},
+        {"label": "Software", "value": "SolidWorks, CATIA, Geomagic"},
+        {"label": "Delivery", "value": "Step, IGES, native CAD, PDF drawings"}
+      ],
+      "image": "assets/machined-bracket.jpg"
+    },
+    {
+      "id": "cad",
+      "number": "05",
+      "label": "Design & Programming",
+      "title": "CAD / CAM Design & Engineering",
+      "description": "Our engineering team handles the complete design-to-manufacture pipeline. From DFM analysis and tolerance stack-up review to fixture design and CNC program generation — every decision is made with machinability and performance in mind.",
+      "specs": [
+        {"label": "CAD", "value": "SolidWorks, CATIA, Fusion 360"},
+        {"label": "CAM", "value": "Mastercam, Fusion CAM"},
+        {"label": "Analysis", "value": "DFM, tolerance stack-up, FEA"},
+        {"label": "Deliverables", "value": "Full drawing package + NC programs"}
+      ],
+      "image": "assets/brackets-flat.jpg"
+    }
+  ]
+}

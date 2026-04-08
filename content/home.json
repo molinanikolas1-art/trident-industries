@@ -1,0 +1,42 @@
+{
+  "hero_eyebrow": "Trident Industries, Inc.",
+  "hero_title": "We Build\nWhat Others\nCan't.",
+  "hero_subtitle": "Advanced manufacturing for aerospace, defense, automotive, and naval applications. Precision machined to tolerances that matter.",
+  "hero_cta_primary": "View Capabilities",
+  "hero_cta_secondary": "Request a Quote",
+
+  "what_we_do_label": "What We Do",
+  "what_we_do_title": "Full-Spectrum Precision Manufacturing",
+  "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing — Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
+  "what_we_do_capabilities": [
+    "3-Axis, 4-Axis & 5-Axis CNC Milling",
+    "Metal & Polymer 3D Printing",
+    "High-Accuracy 3D Scanning",
+    "Reverse Engineering & CAD/CAM",
+    "Structural & Aerospace Components"
+  ],
+
+  "printing_label": "Additive Manufacturing",
+  "printing_title": "Print What Machining Can't Touch",
+  "printing_text": "Internal channels, organic geometry, topology-optimized structures — our metal 3D printing capability opens design territory that conventional machining simply cannot reach. We bridge both worlds in one facility.",
+  "printing_materials": ["316L Stainless Steel", "Ti-6Al-4V Titanium", "Inconel 718", "High-performance polymers"],
+
+  "about_label": "About Trident Industries",
+  "about_title": "Built on a Foundation of Manufacturing Excellence",
+  "about_text1": "Trident Industries, Incorporated was established with one mission: to manufacture components that perform in the environments where failure is not an option. We serve the aerospace, defense, naval, and automotive sectors with the precision, traceability, and engineering expertise these industries demand.",
+  "about_text2": "Every part that leaves our facility has been engineered, programmed, machined, and inspected under the same roof — giving our clients a single, accountable partner from design to delivery.",
+
+  "cta_title": "Ready to Build Something Exceptional?",
+  "cta_subtitle": "For major project inquiries, contact our team directly. We respond within one business day.",
+  "cta_primary": "Send Project Details",
+  "cta_secondary": "(949) 295-7541",
+
+  "industries": [
+    "Aerospace",
+    "Land Systems",
+    "Naval",
+    "Oil & Gas",
+    "Automotive",
+    "Off Road"
+  ]
+}

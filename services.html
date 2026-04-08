@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Trident Industries, Inc.</title>
+  <meta name="description" content="Trident Industries capabilities: 3D printing, 3D scanning, 3-5 axis CNC milling, reverse engineering, CAD/CAM design, and manufacturing engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <header class="nav at-top" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-full.png" class="logo-full" alt="Trident Industries, Inc." />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--red nav-cta">Request a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--red">Request a Quote</a>
+    </nav>
+  </header>
+
+  <main data-page="services">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero-bg">
+        <img src="assets/intake-batch.jpg" alt="Precision CNC machined parts" />
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="container">
+          <span class="label">What We Do</span>
+          <h1 class="page-hero-title" data-cms="page_title">Our Capabilities</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01 — CNC MILLING -->
+    <section class="service-detail" data-service="cnc">
+      <div class="container">
+        <div class="service-detail-grid reveal">
+          <div class="service-detail-image">
+            <img src="assets/cnc-housings.jpg" data-cms="svc_img" alt="CNC precision machined aluminum parts produced by Trident Industries" loading="lazy" />
+          </div>
+          <div>
+            <span class="label">01 — CNC Milling</span>
+            <h2 class="service-detail-title">3, 4 &amp; 5-Axis CNC Milling</h2>
+            <p class="service-detail-text">Multi-axis machining for the most demanding components in aerospace, defense, and automotive. Our facility runs Haas vertical machining centers capable of complex simultaneous 5-axis operations, enabling tight-tolerance work on titanium, aluminum, Inconel, and stainless steel.</p>
+            <div class="service-specs">
+              <div class="service-spec"><span class="service-spec-label">Axes</span><span class="service-spec-value">3-Axis, 4-Axis, 5-Axis simultaneous</span></div>
+              <div class="service-spec"><span class="service-spec-label">Tolerance</span><span class="service-spec-value">±0.0001" on critical features</span></div>
+              <div class="service-spec"><span class="service-spec-label">Materials</span><span class="service-spec-value">Aluminum, Titanium, Inconel, Stainless, Steel</span></div>
+              <div class="service-spec"><span class="service-spec-label">Volume</span><span class="service-spec-value">Prototype through production runs</span></div>
+            </div>
+            <a href="contact.html" class="btn btn--red">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 — 3D PRINTING -->
+    <section class="service-detail" data-service="printing">
+      <div class="container">
+        <div class="service-detail-grid service-detail-grid--reverse reveal">
+          <div class="service-detail-image">
+            <img src="assets/printed-housing.jpg" data-cms="svc_img" alt="Complex 3D printed metal housing manufactured by Trident Industries" loading="lazy" />
+          </div>
+          <div>
+            <span class="label">02 — Additive Manufacturing</span>
+            <h2 class="service-detail-title">Metal &amp; Polymer 3D Printing</h2>
+            <p class="service-detail-text">Additive manufacturing extends what's possible — internal cooling channels, lattice-optimized structures, and organic geometries that no CNC can reach. We produce metal parts in stainless, titanium, and Inconel alongside high-performance polymer components.</p>
+            <div class="service-specs">
+              <div class="service-spec"><span class="service-spec-label">Processes</span><span class="service-spec-value">DMLS, SLS, FDM, SLA</span></div>
+              <div class="service-spec"><span class="service-spec-label">Metals</span><span class="service-spec-value">316L, Ti-6Al-4V, Inconel 718</span></div>
+              <div class="service-spec"><span class="service-spec-label">Polymers</span><span class="service-spec-value">Nylon, PEEK, Ultem, ABS, Carbon Fiber</span></div>
+              <div class="service-spec"><span class="service-spec-label">Applications</span><span class="service-spec-value">Prototype, functional, flight-ready components</span></div>
+            </div>
+            <a href="contact.html" class="btn btn--red">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL BLEED DIVIDER -->
+    <div class="full-bleed reveal">
+      <img src="assets/brackets-polished.jpg" alt="Polished precision machined aluminum brackets by Trident Industries" loading="lazy" />
+      <div class="full-bleed-overlay">
+        <div class="full-bleed-text">
+          <span class="label">Surface Finish</span>
+          <p class="full-bleed-quote">Every Surface. Every Edge. Every Time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 — 3D SCANNING -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-grid reveal">
+          <div class="service-detail-image">
+            <img src="assets/small-brackets.jpg" alt="Precision machined brackets ready for 3D scanning inspection" loading="lazy" />
+          </div>
+          <div>
+            <span class="label">03 — 3D Scanning</span>
+            <h2 class="service-detail-title">High-Accuracy 3D Scanning</h2>
+            <p class="service-detail-text">Structured light and laser scanning systems capture full-field surface geometry at micron-level accuracy. Used for incoming inspection, first-article validation, and as the starting point for reverse engineering workflows.</p>
+            <div class="service-specs">
+              <div class="service-spec"><span class="service-spec-label">Technology</span><span class="service-spec-value">Structured light, laser scanning</span></div>
+              <div class="service-spec"><span class="service-spec-label">Accuracy</span><span class="service-spec-value">±0.005mm across full surface</span></div>
+              <div class="service-spec"><span class="service-spec-label">Output</span><span class="service-spec-value">Point cloud, mesh, deviation reports</span></div>
+              <div class="service-spec"><span class="service-spec-label">Use Cases</span><span class="service-spec-value">Inspection, reverse engineering, QA</span></div>
+            </div>
+            <a href="contact.html" class="btn btn--red">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 — REVERSE ENGINEERING -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-grid service-detail-grid--reverse reveal">
+          <div class="service-detail-image">
+            <img src="assets/machined-bracket.jpg" alt="CNC machined structural bracket produced through reverse engineering" loading="lazy" />
+          </div>
+          <div>
+            <span class="label">04 — Reverse Engineering</span>
+            <h2 class="service-detail-title">Reverse Engineering</h2>
+            <p class="service-detail-text">We reconstruct legacy, obsolete, or competitor components into fully parametric CAD models — ready to machine, modify, or improve. Starting from scan data, physical measurements, or worn originals, we deliver production-ready documentation.</p>
+            <div class="service-specs">
+              <div class="service-spec"><span class="service-spec-label">Input</span><span class="service-spec-value">Physical part, scan data, drawings</span></div>
+              <div class="service-spec"><span class="service-spec-label">Output</span><span class="service-spec-value">Parametric CAD, GD&amp;T drawings, toolpaths</span></div>
+              <div class="service-spec"><span class="service-spec-label">Software</span><span class="service-spec-value">SolidWorks, CATIA, Geomagic</span></div>
+              <div class="service-spec"><span class="service-spec-label">Delivery</span><span class="service-spec-value">Step, IGES, native CAD, PDF drawings</span></div>
+            </div>
+            <a href="contact.html" class="btn btn--red">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — CAD/CAM -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-grid reveal">
+          <div class="service-detail-image">
+            <img src="assets/brackets-flat.jpg" alt="Precision engineered aluminum brackets designed using CAD/CAM by Trident Industries" loading="lazy" />
+          </div>
+          <div>
+            <span class="label">05 — Design &amp; Programming</span>
+            <h2 class="service-detail-title">CAD / CAM Design &amp; Engineering</h2>
+            <p class="service-detail-text">Our engineering team handles the complete design-to-manufacture pipeline. From DFM analysis and tolerance stack-up review to fixture design and CNC program generation — every decision is made with machinability and performance in mind.</p>
+            <div class="service-specs">
+              <div class="service-spec"><span class="service-spec-label">CAD</span><span class="service-spec-value">SolidWorks, CATIA, Fusion 360</span></div>
+              <div class="service-spec"><span class="service-spec-label">CAM</span><span class="service-spec-value">Mastercam, Fusion CAM</span></div>
+              <div class="service-spec"><span class="service-spec-label">Analysis</span><span class="service-spec-value">DFM, tolerance stack-up, FEA</span></div>
+              <div class="service-spec"><span class="service-spec-label">Deliverables</span><span class="service-spec-value">Full drawing package + NC programs</span></div>
+            </div>
+            <a href="contact.html" class="btn btn--red">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip reveal">
+      <div class="container">
+        <span class="label" style="justify-content:center;">Start Today</span>
+        <h2 class="cta-strip-title">Have a Part That Needs to Be Built?</h2>
+        <p class="cta-strip-sub">Send us your drawings or describe your project. Our engineers will review and respond within one business day.</p>
+        <div class="cta-strip-actions">
+          <a href="contact.html" class="btn btn--red">Contact Our Team</a>
+          <a href="tel:+19492957541" class="btn btn--outline">(949) 295-7541</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container--wide">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:0.75rem;">
+            <img src="assets/logo-full.png" class="logo-full" alt="Trident Industries, Inc." />
+          </a>
+          <p class="footer-tagline">Manufacturing Excellence.<br/>Engineered for the Industries<br/>That Demand It.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <span class="footer-col-title">Capabilities</span>
+            <a href="services.html">3D Printing</a>
+            <a href="services.html">3D Scanning</a>
+            <a href="services.html">CNC Milling</a>
+            <a href="services.html">Reverse Engineering</a>
+            <a href="services.html">CAD / CAM</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Industries</span>
+            <a href="contact.html">Aerospace</a>
+            <a href="contact.html">Land Systems</a>
+            <a href="contact.html">Naval</a>
+            <a href="contact.html">Oil &amp; Gas</a>
+            <a href="contact.html">Automotive</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Contact</span>
+            <a href="mailto:sales@tridentindustriesinc.com">sales@tridentindustriesinc.com</a>
+            <a href="tel:+19492957541">(949) 295-7541</a>
+            <a href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Trident Industries, Inc. All rights reserved.</span>
+        <span>Precision Manufactured in the USA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/cms.js"></script>
+  <script src="script.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
