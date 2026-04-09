@@ -151,8 +151,48 @@
     } catch(e) {}
   }
 
+
+  // Design / Colors
+  async function loadDesign() {
+    try {
+      const r = await fetch('/content/design.json');
+      const d = await r.json();
+      const root = document.documentElement;
+
+      if (d.accent_color)          root.style.setProperty('--red', d.accent_color);
+      if (d.accent_hover)          root.style.setProperty('--red-hover', d.accent_hover);
+      if (d.background_color)      root.style.setProperty('--black', d.background_color);
+      if (d.surface_color)         root.style.setProperty('--gray-1', d.surface_color);
+      if (d.text_color)            root.style.setProperty('--white', d.text_color);
+
+      // Logo swap
+      if (d.nav_logo) {
+        document.querySelectorAll('.logo-full').forEach(img => {
+          img.src = '/' + d.nav_logo;
+        });
+      }
+
+      // Hero image swap
+      if (d.hero_image) {
+        const heroBg = document.getElementById('heroBg');
+        if (heroBg) {
+          heroBg.style.backgroundImage = "url('/" + d.hero_image + "')";
+        }
+      }
+
+      // Hero overlay opacity
+      if (d.hero_overlay_opacity) {
+        const overlay = document.querySelector('.hero-overlay');
+        if (overlay) {
+          overlay.style.background = \`linear-gradient(to top, rgba(8,8,8,\${d.hero_overlay_opacity}) 0%, rgba(8,8,8,0.5) 40%, rgba(8,8,8,0.2) 80%, rgba(8,8,8,0.1) 100%)\`;
+        }
+      }
+    } catch(e) {}
+  }
+
   // Run all loaders
   document.addEventListener('DOMContentLoaded', function () {
+    loadDesign();
     loadSite();
     loadHome();
     loadServices();

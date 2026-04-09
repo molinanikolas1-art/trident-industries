@@ -1,0 +1,10 @@
+{
+  "accent_color": "#c41a1a",
+  "accent_hover": "#a81515",
+  "background_color": "#080808",
+  "surface_color": "#111111",
+  "text_color": "#e0e8f8",
+  "nav_logo": "assets/logo-full.png",
+  "hero_image": "assets/missile-flight.jpg",
+  "hero_overlay_opacity": "0.75"
+}
