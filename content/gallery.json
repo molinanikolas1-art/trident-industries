@@ -56,16 +56,20 @@
       "label": "Coated Structural Bracket"
     },
     {
-      "image": "assets/missile-flight.jpg",
-      "label": "Naval — In Flight"
+      "label": "High-strength billet rib",
+      "image": "assets/img_1557.png"
     },
     {
-      "image": "assets/missile-hangar.jpg",
-      "label": "Naval — Hangar Assembly"
+      "label": "Formed sheet-metal gussets",
+      "image": "assets/img_2113.jpg"
     },
     {
-      "image": "assets/missile-loaded.jpg",
-      "label": "Naval — Wing-Mounted"
+      "image": "assets/img_1559.png",
+      "label": "Countersunk mounting brackets"
+    },
+    {
+      "image": "assets/img_1561.png",
+      "label": "CNC surfacing toolpaths"
     }
   ]
 }
