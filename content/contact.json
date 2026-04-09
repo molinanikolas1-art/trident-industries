@@ -1,13 +1,11 @@
 {
   "page_label": "Inquiries",
-  "page_title": "Contact Us",
-  "page_description": "For major project inquiries, send us your specifications. Our engineering team responds within one business day.",
-  "section_label": "Get in Touch",
-  "section_title": "Let's Build Something Together",
   "section_text": "Whether you have a set of drawings ready or just a concept — reach out. Our team will review your requirements and provide a rapid response on feasibility, lead time, and pricing.",
-  "email": "sales@tridentindustriesinc.com",
-  "phone": "(949) 295-7541",
+  "page_title": "Contact Us",
   "response_time": "Within one business day",
+  "page_description": "For major project inquiries, send us your specifications. Our engineering team responds within 24-48hours.",
+  "phone": "(949) 295-7541",
+  "section_label": "Get in Touch",
   "industries": [
     "Aerospace",
     "Land Systems & Defense",
@@ -15,5 +13,7 @@
     "Oil & Gas",
     "Automotive",
     "Off Road Industry"
-  ]
+  ],
+  "email": "sales@tridentindustriesinc.com",
+  "section_title": "Let's Build Something Together"
 }
