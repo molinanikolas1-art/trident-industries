@@ -44,10 +44,6 @@
       "label": "Precision Brackets"
     },
     {
-      "image": "assets/intake-batch.jpg",
-      "label": "Batch Production"
-    },
-    {
       "image": "assets/brackets-standing.jpg",
       "label": "CNC Machined Parts"
     },
@@ -70,6 +66,22 @@
     {
       "image": "assets/img_1561.png",
       "label": "CNC surfacing toolpaths"
+    },
+    {
+      "label": "Precision milled clevis blocks",
+      "image": "assets/img_2096.jpg"
+    },
+    {
+      "image": "assets/img_3558.jpg",
+      "label": "Sand-cast intake housing"
+    },
+    {
+      "image": "assets/img_3231.jpg",
+      "label": "Pocketed billet truss"
+    },
+    {
+      "image": "assets/img_3714.jpg",
+      "label": "Weight-relieved lattice bracket"
     }
   ]
 }
