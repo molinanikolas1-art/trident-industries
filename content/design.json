@@ -1,14 +1,14 @@
 {
   "accent_hover": "#a81515",
   "nav_logo": "assets/trident-original-bigger.png",
+  "heading_scale": "100",
   "accent_color": "#c41a1a",
   "surface_color": "#111111",
   "text_color": "#e0e8f8",
   "background_color": "#080808",
+  "customer_logo_size": "150",
   "hero_image": "assets/missile-flight.jpg",
+  "body_text_size": "100",
   "hero_overlay_opacity": "0.75",
-  "hero_watermark": " ",
-  "customer_logo_size": "80",
-  "heading_scale": "100",
-  "body_text_size": "100"
+  "hero_watermark": " "
 }
