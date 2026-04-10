@@ -100,10 +100,15 @@ collections:
             name: industries
             widget: list
             field: { label: "Industry", name: industry, widget: string }
-          - { label: "Hero Title Size (%)", name: hero_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Hero Subtitle Size (%)", name: hero_subtitle_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Section Titles Size (%)", name: section_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Section Text Size (%)", name: section_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Hero Title — Font Size (px)", name: hero_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "72", hint: "Default 72" }
+          - { label: "Hero Subtitle — Font Size (px)", name: hero_subtitle_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "18", hint: "Default 18" }
+          - { label: "Eyebrow Text — Font Size (px)", name: eyebrow_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "12", hint: "Default 12" }
+          - { label: "Section Titles — Font Size (px)", name: section_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "36", hint: "Default 36" }
+          - { label: "Section Text — Font Size (px)", name: section_text_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "16", hint: "Default 16" }
+          - { label: "Divider Title — Font Size (px)", name: divider_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "36", hint: "Default 36" }
+          - { label: "Divider Label — Font Size (px)", name: divider_label_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "12", hint: "Default 12" }
+          - { label: "Button Text — Font Size (px)", name: button_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "14", hint: "Default 14" }
+          - { label: "CTA Button Text — Font Size (px)", name: cta_button_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "14", hint: "Default 14" }
           - { label: "Gallery Strip Height (px)", name: gallery_strip_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
 
   - name: services
@@ -131,9 +136,11 @@ collections:
                   - { label: "Label", name: spec_label, widget: string }
                   - { label: "Value", name: value, widget: string }
               - { label: "Image", name: image, widget: image }
-          - { label: "Page Title Size (%)", name: page_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Service Title Size (%)", name: service_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Service Text Size (%)", name: service_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Page Title — Font Size (px)", name: page_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "48", hint: "Default 48" }
+          - { label: "Service Titles — Font Size (px)", name: service_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "36", hint: "Default 36" }
+          - { label: "Service Text — Font Size (px)", name: service_text_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "16", hint: "Default 16" }
+          - { label: "Spec Labels — Font Size (px)", name: spec_label_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "12", hint: "Default 12" }
+          - { label: "Spec Values — Font Size (px)", name: spec_value_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "14", hint: "Default 14" }
           - { label: "Service Image Height (px)", name: service_image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "400" }
 
   - name: gallery
@@ -152,7 +159,8 @@ collections:
             fields:
               - { label: "Photo", name: image, widget: image }
               - { label: "Caption", name: label, widget: string }
-          - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Page Title — Font Size (px)", name: title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "48", hint: "Default 48" }
+          - { label: "Description — Font Size (px)", name: description_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "16", hint: "Default 16" }
           - { label: "Image Height (px)", name: image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
 
   - name: contact
@@ -174,5 +182,7 @@ collections:
             name: industries
             widget: list
             field: { label: "Industry", name: industry, widget: string }
-          - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Text Size (%)", name: text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Page Title — Font Size (px)", name: page_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "48", hint: "Default 48" }
+          - { label: "Page Description — Font Size (px)", name: page_desc_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "16", hint: "Default 16" }
+          - { label: "Section Title — Font Size (px)", name: section_title_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "36", hint: "Default 36" }
+          - { label: "Section Text — Font Size (px)", name: section_text_size, widget: select, options: ["12", "14", "16", "18", "20", "22", "24", "28", "32", "36", "42", "48", "56", "64", "72", "84", "96", "120"], default: "16", hint: "Default 16" }
