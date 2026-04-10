@@ -34,9 +34,10 @@
     if(grid){
       if(cu.section_title)set('.customers-title',cu.section_title);
       if(cu.customers&&cu.customers.length>0){
-        var logoSize=cu.customer_logo_size||'80';
+        var defaultSize=cu.customer_logo_size||'80';
         grid.innerHTML=cu.customers.map(function(x){
-          return'<div class="customer-item"><img src="/'+x.logo+'" alt="'+x.name+'" style="height:'+logoSize+'px" loading="lazy"/><span>'+x.name+'</span></div>';
+          var s=(x.logo_size&&x.logo_size!=='Default')?x.logo_size:defaultSize;
+          return'<div class="customer-item"><img src="/'+x.logo+'" alt="'+x.name+'" style="height:'+s+'px" loading="lazy"/><span>'+x.name+'</span></div>';
         }).join('');
       }
     }
@@ -80,6 +81,7 @@
       sz('.hero-actions .btn',h.button_size);
       sz('.cta-strip-actions .btn',h.cta_button_size);
       if(h.gallery_strip_height)imgH('.gallery-strip-item img',h.gallery_strip_height);
+      sz('.industry-item span',h.industry_text_size);
     }
 
     /* SERVICES */
