@@ -82,6 +82,42 @@
     {
       "image": "assets/img_3714.jpg",
       "label": "Weight-relieved lattice bracket"
+    },
+    {
+      "image": "assets/img_3626.jpg",
+      "label": "Four-axis machined mount"
+    },
+    {
+      "image": "assets/untitled-design.png",
+      "label": "Multi-axis organic junction"
+    },
+    {
+      "label": "Hard-anodized billet arm",
+      "image": "assets/untitled-design.jpg"
+    },
+    {
+      "image": "assets/untitled-design_7.png",
+      "label": "Skeletonized brace extrusion"
+    },
+    {
+      "image": "assets/untitled-design_6.png",
+      "label": "Media-blasted control arm"
+    },
+    {
+      "image": "assets/untitled-design_11.png",
+      "label": "Turned and milled adapters"
+    },
+    {
+      "image": "assets/untitled-design_10.png",
+      "label": "High-flow machined runners"
+    },
+    {
+      "image": "assets/untitled-design_14.png",
+      "label": "Printed tube welding fixture"
+    },
+    {
+      "image": "assets/untitled-design_16.png",
+      "label": "High-temp polymer impeller"
     }
   ]
 }
