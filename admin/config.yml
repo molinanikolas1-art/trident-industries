@@ -50,46 +50,26 @@ collections:
         file: content/home.json
         format: json
         fields:
-          - widget: object
-            name: hero
-            label: "Hero Section"
-            fields:
-              - { label: "Eyebrow Text", name: hero_eyebrow, widget: string }
-              - { label: "Main Title", name: hero_title, widget: text, hint: "Use \\n for line breaks" }
-              - { label: "Subtitle", name: hero_subtitle, widget: text }
-              - { label: "Primary Button", name: hero_cta_primary, widget: string }
-              - { label: "Secondary Button", name: hero_cta_secondary, widget: string }
-
-          - widget: object
-            name: what_we_do
-            label: "What We Do Section"
-            fields:
-              - { label: "Section Label", name: what_we_do_label, widget: string }
-              - { label: "Title", name: what_we_do_title, widget: string }
-              - { label: "Body Text", name: what_we_do_text, widget: text }
-              - label: "Capabilities List"
-                name: what_we_do_capabilities
-                widget: list
-                field: { label: "Item", name: item, widget: string }
-
-          - widget: object
-            name: about
-            label: "About Section"
-            fields:
-              - { label: "Section Label", name: about_label, widget: string }
-              - { label: "Title", name: about_title, widget: string }
-              - { label: "Paragraph 1", name: about_text1, widget: text }
-              - { label: "Paragraph 2", name: about_text2, widget: text }
-
-          - widget: object
-            name: cta
-            label: "Call to Action Section"
-            fields:
-              - { label: "Title", name: cta_title, widget: string }
-              - { label: "Subtitle", name: cta_subtitle, widget: string }
-              - { label: "Primary Button", name: cta_primary, widget: string }
-              - { label: "Secondary Button", name: cta_secondary, widget: string }
-
+          - { label: "Eyebrow Text", name: hero_eyebrow, widget: string }
+          - { label: "Main Title", name: hero_title, widget: text, hint: "Use \\n for line breaks" }
+          - { label: "Subtitle", name: hero_subtitle, widget: text }
+          - { label: "Primary Button", name: hero_cta_primary, widget: string }
+          - { label: "Secondary Button", name: hero_cta_secondary, widget: string }
+          - { label: "What We Do - Title", name: what_we_do_title, widget: string }
+          - { label: "What We Do - Text", name: what_we_do_text, widget: text }
+          - label: "Capabilities List"
+            name: what_we_do_capabilities
+            widget: list
+            field: { label: "Item", name: item, widget: string }
+          - { label: "3D Printing - Title", name: printing_title, widget: string }
+          - { label: "3D Printing - Text", name: printing_text, widget: text }
+          - { label: "About - Title", name: about_title, widget: string }
+          - { label: "About - Paragraph 1", name: about_text1, widget: text }
+          - { label: "About - Paragraph 2", name: about_text2, widget: text }
+          - { label: "CTA - Title", name: cta_title, widget: string }
+          - { label: "CTA - Subtitle", name: cta_subtitle, widget: string }
+          - { label: "CTA - Primary Button", name: cta_primary, widget: string }
+          - { label: "CTA - Secondary Button", name: cta_secondary, widget: string }
           - label: "Industries Served"
             name: industries
             widget: list
