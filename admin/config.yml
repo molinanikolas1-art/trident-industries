@@ -50,6 +50,7 @@ collections:
         file: content/home.json
         format: json
         fields:
+          - { label: "Hero Watermark Text", name: hero_watermark, widget: string, hint: "Large faded text behind the hero title" }
           - { label: "Eyebrow Text", name: hero_eyebrow, widget: string }
           - { label: "Main Title", name: hero_title, widget: text, hint: "Use \\n for line breaks" }
           - { label: "Subtitle", name: hero_subtitle, widget: text }
