@@ -1,0 +1,346 @@
+{
+  "design": {
+    "accent_hover": "#a81515",
+    "nav_logo": "assets/trident-original-bigger.png",
+    "heading_scale": "100",
+    "accent_color": "#c41a1a",
+    "surface_color": "#111111",
+    "text_color": "#e0e8f8",
+    "background_color": "#080808",
+    "customer_logo_size": "150",
+    "hero_image": "assets/missile-flight.jpg",
+    "body_text_size": "100",
+    "hero_overlay_opacity": "0.75",
+    "hero_watermark": " "
+  },
+  "site": {
+    "company_name": "Trident Industries, Inc.",
+    "tagline": "Precision Manufactured in the USA",
+    "email": "sales@tridentindustriesinc.com",
+    "phone": "(949) 295-7541",
+    "footer_tagline": "Manufacturing Excellence. Engineered for the Industries That Demand It."
+  },
+  "home": {
+    "hero_cta_secondary": "Request a Quote",
+    "printing_materials": [
+      "316L Stainless Steel",
+      "Ti-6Al-4V Titanium",
+      "Inconel 718",
+      "High-performance polymers"
+    ],
+    "about_label": "About Trident Industries",
+    "hero_eyebrow": "Trident Industries, Inc.",
+    "cta_secondary": "(949) 295-7541",
+    "about_title": "Built on a Foundation of Manufacturing Excellence",
+    "cta_subtitle": "For major project inquiries, contact our team directly. We respond within one business day.",
+    "cta_title": "Ready to Build Something Exceptional?",
+    "printing_label": "Additive Manufacturing",
+    "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing \u2014 Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
+    "gallery_strip": [
+      {
+        "image": "assets/untitled-design_22.png",
+        "label": "Industrial"
+      },
+      {
+        "image": "assets/untitled-design.png",
+        "label": "3D Printing"
+      },
+      {
+        "image": "assets/brackets-polished.jpg",
+        "label": "CNC Milling"
+      }
+    ],
+    "hero_cta_primary": "View Capabilities",
+    "divider_label": "Naval & Aerospace",
+    "printing_title": "Print What Machining Can't Touch",
+    "about_text1": "Trident Industries, Incorporated was established with one mission: to manufacture components that perform in the environments where failure is not an option. We serve the aerospace, defense, naval, and automotive sectors with the precision, traceability, and engineering expertise these industries demand.",
+    "divider_title": "Built for the Missions That Matter Most",
+    "about_text2": "Every part that leaves our facility has been engineered, programmed, machined, and inspected under the same roof \u2014 giving our clients a single, accountable partner from design to delivery.",
+    "hero_title": "Delivering solutions\n beyond conventional\n limits.",
+    "cta_primary": "Send Project Details",
+    "what_we_do_capabilities": [
+      "3-Axis, 4-Axis & 5-Axis CNC Milling",
+      "Metal & Polymer 3D Printing",
+      "High-Accuracy 3D Scanning",
+      "Reverse Engineering & CAD/CAM",
+      "Structural & Aerospace Components"
+    ],
+    "divider_image": "assets/missile-hangar.jpg",
+    "what_we_do_label": "What We Do",
+    "printing_text": "Internal channels, organic geometry, topology-optimized structures \u2014 our metal 3D printing capability opens design territory that conventional machining simply cannot reach. We bridge both worlds in one facility.",
+    "what_we_do_title": "Full-Spectrum Precision Manufacturing",
+    "industries": [
+      "Aerospace",
+      "Land Systems",
+      "Naval",
+      "Oil & Gas",
+      "Automotive",
+      "Industrial"
+    ],
+    "hero_subtitle": "Advanced manufacturing for aerospace, defense, automotive, and naval applications. Precision machined to tolerances that matter.",
+    "hero_title_size": "100",
+    "hero_subtitle_size": "100",
+    "section_title_size": "100",
+    "section_text_size": "100",
+    "gallery_strip_height": "300"
+  },
+  "services": {
+    "page_label": "What We Do",
+    "page_title": "Our Capabilities",
+    "services": [
+      {
+        "id": "cnc",
+        "number": "01",
+        "label": "CNC Milling",
+        "title": "3, 4 & 5-Axis CNC Milling",
+        "description": "Multi-axis machining for the most demanding components in aerospace, defense, and automotive. Our facility runs Haas vertical machining centers capable of complex simultaneous 5-axis operations, enabling tight-tolerance work on titanium, aluminum, Inconel, and stainless steel.",
+        "specs": [
+          {
+            "label": "Axes",
+            "value": "3-Axis, 4-Axis, 5-Axis simultaneous"
+          },
+          {
+            "label": "Tolerance",
+            "value": "\u00b10.0001\" on critical features"
+          },
+          {
+            "label": "Materials",
+            "value": "Aluminum, Titanium, Inconel, Stainless, Steel"
+          },
+          {
+            "label": "Volume",
+            "value": "Prototype through production runs"
+          }
+        ],
+        "image": "assets/cnc-housings.jpg"
+      },
+      {
+        "id": "printing",
+        "number": "02",
+        "label": "Additive Manufacturing",
+        "title": "Metal & Polymer 3D Printing",
+        "description": "Additive manufacturing extends what's possible \u2014 internal cooling channels, lattice-optimized structures, and organic geometries that no CNC can reach. We produce metal parts in stainless, titanium, and Inconel alongside high-performance polymer components.",
+        "specs": [
+          {
+            "label": "Processes",
+            "value": "DMLS, SLS, FDM, SLA"
+          },
+          {
+            "label": "Metals",
+            "value": "316L, Ti-6Al-4V, Inconel 718"
+          },
+          {
+            "label": "Polymers",
+            "value": "Nylon, PEEK, Ultem, ABS, Carbon Fiber"
+          },
+          {
+            "label": "Applications",
+            "value": "Prototype, functional, flight-ready components"
+          }
+        ],
+        "image": "assets/untitled-design.png"
+      },
+      {
+        "id": "scanning",
+        "number": "03",
+        "label": "3D Scanning",
+        "title": "High-Accuracy 3D Scanning",
+        "description": "Structured light and laser scanning systems capture full-field surface geometry at micron-level accuracy. Used for incoming inspection, first-article validation, and as the starting point for reverse engineering workflows.",
+        "specs": [
+          {
+            "label": "Technology",
+            "value": "Structured light, laser scanning"
+          },
+          {
+            "label": "Accuracy",
+            "value": "\u00b10.005mm across full surface"
+          },
+          {
+            "label": "Output",
+            "value": "Point cloud, mesh, deviation reports"
+          },
+          {
+            "label": "Use Cases",
+            "value": "Inspection, reverse engineering, QA"
+          }
+        ],
+        "image": "assets/untitled-design_14.png"
+      },
+      {
+        "id": "reverse",
+        "number": "04",
+        "label": "Reverse Engineering",
+        "title": "Reverse Engineering",
+        "description": "We reconstruct legacy, obsolete, or competitor components into fully parametric CAD models \u2014 ready to machine, modify, or improve. Starting from scan data, physical measurements, or worn originals, we deliver production-ready documentation.",
+        "specs": [
+          {
+            "label": "Input",
+            "value": "Physical part, scan data, drawings"
+          },
+          {
+            "label": "Output",
+            "value": "Parametric CAD, GD&T drawings, toolpaths"
+          },
+          {
+            "label": "Software",
+            "value": "SolidWorks, CATIA, Geomagic"
+          },
+          {
+            "label": "Delivery",
+            "value": "Step, IGES, native CAD, PDF drawings"
+          }
+        ],
+        "image": "assets/machined-bracket.jpg"
+      },
+      {
+        "id": "cad",
+        "number": "05",
+        "label": "Design & Programming",
+        "title": "CAD / CAM Design & Engineering",
+        "description": "Our engineering team handles the complete design-to-manufacture pipeline. From DFM analysis and tolerance stack-up review to fixture design and CNC program generation \u2014 every decision is made with machinability and performance in mind.",
+        "specs": [
+          {
+            "label": "CAD",
+            "value": "SolidWorks, CATIA, Fusion 360"
+          },
+          {
+            "label": "CAM",
+            "value": "Mastercam, Fusion CAM"
+          },
+          {
+            "label": "Analysis",
+            "value": "DFM, tolerance stack-up, FEA"
+          },
+          {
+            "label": "Deliverables",
+            "value": "Full drawing package + NC programs"
+          }
+        ],
+        "image": "assets/brackets-flat.jpg"
+      }
+    ],
+    "page_title_size": "100",
+    "service_title_size": "100",
+    "service_text_size": "100",
+    "service_image_height": "400"
+  },
+  "gallery": {
+    "page_label": "Our Work",
+    "page_title": "Parts Gallery",
+    "page_description": "A selection of components manufactured at Trident Industries \u2014 from production CNC runs to complex additive parts.",
+    "items": [
+      {
+        "image": "assets/printed-housing.jpg",
+        "label": "3D Printed Housing"
+      },
+      {
+        "image": "assets/brackets-polished.jpg",
+        "label": "Machined Brackets"
+      },
+      {
+        "image": "assets/printed-fairing.jpg",
+        "label": "3D Printed Fairing"
+      },
+      {
+        "image": "assets/machined-bracket.jpg",
+        "label": "Structural Bracket"
+      },
+      {
+        "image": "assets/brackets-flat.jpg",
+        "label": "Aluminum Brackets"
+      },
+      {
+        "image": "assets/shop-floor.jpg",
+        "label": "Our Facility"
+      },
+      {
+        "image": "assets/untitled-design_14.png",
+        "label": "Precision Brackets"
+      },
+      {
+        "image": "assets/brackets-standing.jpg",
+        "label": "CNC Machined Parts"
+      },
+      {
+        "label": "High-strength polymer jig",
+        "image": "assets/img_1557.png"
+      },
+      {
+        "label": "Formed sheet-metal gussets",
+        "image": "assets/img_2113.jpg"
+      },
+      {
+        "image": "assets/img_1559.png",
+        "label": "Countersunk mounting brackets"
+      },
+      {
+        "image": "assets/img_1561.png",
+        "label": "CNC surfacing toolpaths"
+      },
+      {
+        "label": "Precision milled clevis blocks",
+        "image": "assets/img_2096.jpg"
+      },
+      {
+        "image": "assets/img_3231.jpg",
+        "label": "Pocketed billet truss"
+      },
+      {
+        "image": "assets/img_3714.jpg",
+        "label": "Offroad light mount"
+      },
+      {
+        "image": "assets/img_3626.jpg",
+        "label": "Four-axis machined mount"
+      },
+      {
+        "image": "assets/untitled-design.png",
+        "label": "Multi-axis organic junction"
+      },
+      {
+        "image": "assets/untitled-design_7.png",
+        "label": "Skeletonized brace extrusion"
+      },
+      {
+        "image": "assets/untitled-design_11.png",
+        "label": "Turned and milled adapters"
+      },
+      {
+        "image": "assets/untitled-design_16.png",
+        "label": "High-temp polymer impeller"
+      }
+    ],
+    "title_size": "100",
+    "image_height": "300"
+  },
+  "contact": {
+    "page_label": "Inquiries",
+    "section_text": "Whether you have a set of drawings ready or just a concept \u2014 reach out. Our team will review your requirements and provide a rapid response on feasibility, lead time, and pricing.",
+    "page_title": "Contact Us",
+    "response_time": "Within 24-48 hours",
+    "page_description": "For major project inquiries, send us your specifications. Our engineering team responds within 24-48 hours.",
+    "phone": "(949) 295-7541",
+    "section_label": "Get in Touch",
+    "industries": [
+      "Aerospace",
+      "Land Systems & Defense",
+      "Naval",
+      "Oil & Gas",
+      "Automotive",
+      "Industrial"
+    ],
+    "email": "sales@tridentindustriesinc.com",
+    "section_title": "Let's Build Something Together",
+    "title_size": "100",
+    "text_size": "100"
+  },
+  "customers": {
+    "section_title": "Trusted By",
+    "customers": [
+      {
+        "logo": "assets/img_3810.jpeg",
+        "name": "EME inc"
+      }
+    ]
+  }
+}
