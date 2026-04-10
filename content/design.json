@@ -6,5 +6,6 @@
   "text_color": "#e0e8f8",
   "nav_logo": "assets/trident-original-bigger.png",
   "hero_image": "assets/missile-flight.jpg",
-  "hero_overlay_opacity": "0.75"
+  "hero_overlay_opacity": "0.75",
+  "hero_watermark": "PRECISION"
 }

@@ -23,6 +23,7 @@ collections:
           - { label: "Text Color", name: text_color, widget: color, default: "#e0e8f8" }
           - { label: "Nav Logo", name: nav_logo, widget: image, hint: "Logo shown in the top navigation and footer" }
           - { label: "Hero Background Image", name: hero_image, widget: image, hint: "Full-screen background image on the home page" }
+          - { label: "Hero Watermark Text", name: hero_watermark, widget: string, hint: "Large faded text behind the hero title" }
           - { label: "Hero Overlay Darkness", name: hero_overlay_opacity, widget: select, options: ["0.5", "0.65", "0.75", "0.85", "0.92"], default: "0.75", hint: "How dark the overlay is over the hero image" }
 
 
@@ -50,7 +51,6 @@ collections:
         file: content/home.json
         format: json
         fields:
-          - { label: "Hero Watermark Text", name: hero_watermark, widget: string, hint: "Large faded text behind the hero title" }
           - { label: "Eyebrow Text", name: hero_eyebrow, widget: string }
           - { label: "Main Title", name: hero_title, widget: text, hint: "Use \\n for line breaks" }
           - { label: "Subtitle", name: hero_subtitle, widget: text }

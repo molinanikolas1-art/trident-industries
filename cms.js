@@ -1,9 +1,9 @@
-﻿(function(){
+(function(){
   var bust='?v='+Date.now();
   function set(s,v){var e=document.querySelector(s);if(e&&v!=null)e.textContent=v;}
   function setAll(s,v){if(!v)return;document.querySelectorAll(s).forEach(function(e){e.textContent=v;});}
 
-  /* DESIGN */
+  /* DESIGN + WATERMARK */
   async function loadDesign(){try{
     var d=await fetch('/content/design.json'+bust).then(r=>r.json());
     var root=document.documentElement;
@@ -15,6 +15,7 @@
     if(d.nav_logo)document.querySelectorAll('.logo-full').forEach(function(i){i.src='/'+d.nav_logo;});
     if(d.hero_image){var h=document.getElementById('heroBg');if(h)h.style.backgroundImage="url('/"+d.hero_image+"')";}
     if(d.hero_overlay_opacity){var ov=document.querySelector('.hero-overlay');if(ov)ov.style.background='linear-gradient(to top,rgba(8,8,8,'+d.hero_overlay_opacity+') 0%,rgba(8,8,8,0.5) 40%,rgba(8,8,8,0.2) 80%,rgba(8,8,8,0.1) 100%)';}
+    if(d.hero_watermark){var wm=document.querySelector('.hero-watermark span');if(wm)wm.textContent=d.hero_watermark;}
   }catch(e){}}
 
   /* SITE-WIDE */
@@ -48,11 +49,19 @@
     if(st[1]&&d.printing_title)st[1].textContent=d.printing_title;
     if(sx[1]&&d.printing_text)sx[1].textContent=d.printing_text;
     if(sl[1]&&d.printing_materials)sl[1].innerHTML=d.printing_materials.map(function(c){return'<li>'+c+'</li>';}).join('');
+    /* DIVIDER */
+    if(d.divider_label){var dl=document.querySelector('.full-bleed-text .label');if(dl)dl.textContent=d.divider_label;}
+    set('.full-bleed-quote',d.divider_title);
+    if(d.divider_image){var di=document.querySelector('.full-bleed img');if(di)di.src='/'+d.divider_image;}
+    /* GALLERY STRIP */
+    if(d.gallery_strip){var gs=document.querySelector('.gallery-strip');if(gs)gs.innerHTML=d.gallery_strip.map(function(i){return'<div class="gallery-strip-item"><img src="/'+i.image+'" alt="'+i.label+'" loading="lazy"/><div class="gallery-strip-label">'+i.label+'</div></div>';}).join('');}
+    /* ABOUT */
     var at=document.querySelector('.about-title');
     var ax=document.querySelectorAll('.about-text');
     if(at&&d.about_title)at.textContent=d.about_title;
     if(ax[0]&&d.about_text1)ax[0].textContent=d.about_text1;
     if(ax[1]&&d.about_text2)ax[1].textContent=d.about_text2;
+    /* CTA */
     set('.cta-strip-title',d.cta_title);
     set('.cta-strip-sub',d.cta_subtitle);
     var cb=document.querySelectorAll('.cta-strip-actions .btn');
