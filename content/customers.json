@@ -2,13 +2,15 @@
   "section_title": "Trusted By",
   "customers": [
     {
-      "logo": "assets/img_3810.jpeg",
-      "name": "EME inc"
+      "logo": "assets/img_3810-2_transparent.png",
+      "name": "EME inc",
+      "logo_size": "120"
     },
     {
       "name": "Notthoff Engineering L.A. Inc.",
-      "logo": "assets/img_2937.jpg"
+      "logo": "assets/img_2937_transparent.png",
+      "logo_size": "120"
     }
   ],
-  "customer_logo_size": "150"
+  "customer_logo_size": "120"
 }
