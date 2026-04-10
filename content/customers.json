@@ -4,7 +4,11 @@
     {
       "logo": "assets/img_3810.jpeg",
       "name": "EME inc"
+    },
+    {
+      "name": "Notthoff Engineering L.A. Inc.",
+      "logo": "assets/img_2937.jpg"
     }
   ],
-  "customer_logo_size": "80"
+  "customer_logo_size": "150"
 }
