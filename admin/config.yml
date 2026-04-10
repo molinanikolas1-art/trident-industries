@@ -6,153 +6,173 @@ media_folder: assets
 public_folder: assets
 
 collections:
-  - name: admin
-    label: "Admin Panel"
+
+  - name: customers
+    label: "🏢 Customers"
     files:
-      - name: all
-        label: "Website Content"
-        file: content/all.json
+      - name: customers
+        label: "Client Logos & Settings"
+        file: content/customers.json
         format: json
         fields:
-
-          - widget: object
+          - { label: "Section Title", name: section_title, widget: string, default: "Trusted By" }
+          - { label: "Logo Display Size (px)", name: customer_logo_size, widget: select, options: ["50", "60", "80", "100", "120", "150"], default: "80", hint: "Height of customer logos" }
+          - label: "Customer Logos"
             name: customers
-            label: "🏢 Customers"
+            widget: list
             fields:
-              - { label: "Section Title", name: section_title, widget: string, default: "Trusted By" }
-              - label: "Customer Logos"
-                name: customers
-                widget: list
-                fields:
-                  - { label: "Company Name", name: name, widget: string }
-                  - { label: "Logo", name: logo, widget: image }
+              - { label: "Company Name", name: name, widget: string }
+              - { label: "Logo", name: logo, widget: image }
 
-          - widget: object
-            name: design
-            label: "🎨 Colors & Design"
+  - name: design
+    label: "🎨 Colors & Design"
+    files:
+      - name: design
+        label: "Colors, Logo & Hero"
+        file: content/design.json
+        format: json
+        fields:
+          - { label: "Accent Color", name: accent_color, widget: color, default: "#c41a1a" }
+          - { label: "Accent Hover", name: accent_hover, widget: color, default: "#a81515" }
+          - { label: "Background Color", name: background_color, widget: color, default: "#080808" }
+          - { label: "Surface Color", name: surface_color, widget: color, default: "#111111" }
+          - { label: "Text Color", name: text_color, widget: color, default: "#e0e8f8" }
+          - { label: "Nav Logo", name: nav_logo, widget: image }
+          - { label: "Hero Background Image", name: hero_image, widget: image }
+          - { label: "Hero Overlay Darkness", name: hero_overlay_opacity, widget: select, options: ["0.5", "0.65", "0.75", "0.85", "0.92"], default: "0.75" }
+          - { label: "Hero Watermark Text", name: hero_watermark, widget: string }
+          - { label: "Heading Size Scale (%)", name: heading_scale, widget: select, options: ["80", "90", "100", "110", "120"], default: "100" }
+          - { label: "Body Text Size (%)", name: body_text_size, widget: select, options: ["85", "90", "100", "110", "120"], default: "100" }
+
+  - name: settings
+    label: "⚙️ Site Settings"
+    files:
+      - name: site
+        label: "Contact Info & Global Settings"
+        file: content/site.json
+        format: json
+        fields:
+          - { label: "Company Name", name: company_name, widget: string }
+          - { label: "Email", name: email, widget: string }
+          - { label: "Phone", name: phone, widget: string }
+          - { label: "Footer Tagline", name: footer_tagline, widget: string }
+          - { label: "Bottom Tagline", name: tagline, widget: string }
+
+  - name: home
+    label: "🏠 Home Page"
+    files:
+      - name: home
+        label: "Home Page Content"
+        file: content/home.json
+        format: json
+        fields:
+          - { label: "Eyebrow Text", name: hero_eyebrow, widget: string }
+          - { label: "Main Title", name: hero_title, widget: text, hint: "Use \\n for line breaks" }
+          - { label: "Subtitle", name: hero_subtitle, widget: text }
+          - { label: "Primary Button", name: hero_cta_primary, widget: string }
+          - { label: "Secondary Button", name: hero_cta_secondary, widget: string }
+          - { label: "What We Do - Title", name: what_we_do_title, widget: string }
+          - { label: "What We Do - Text", name: what_we_do_text, widget: text }
+          - label: "Capabilities List"
+            name: what_we_do_capabilities
+            widget: list
+            field: { label: "Item", name: item, widget: string }
+          - { label: "3D Printing - Title", name: printing_title, widget: string }
+          - { label: "3D Printing - Text", name: printing_text, widget: text }
+          - { label: "Divider - Label", name: divider_label, widget: string }
+          - { label: "Divider - Title", name: divider_title, widget: string }
+          - { label: "Divider - Image", name: divider_image, widget: image }
+          - label: "Gallery Strip (3 photos)"
+            name: gallery_strip
+            widget: list
+            max: 3
             fields:
-              - { label: "Accent Color", name: accent_color, widget: color, default: "#c41a1a" }
-              - { label: "Accent Hover", name: accent_hover, widget: color, default: "#a81515" }
-              - { label: "Background Color", name: background_color, widget: color, default: "#080808" }
-              - { label: "Surface Color", name: surface_color, widget: color, default: "#111111" }
-              - { label: "Text Color", name: text_color, widget: color, default: "#e0e8f8" }
-              - { label: "Nav Logo", name: nav_logo, widget: image }
-              - { label: "Hero Background Image", name: hero_image, widget: image }
-              - { label: "Hero Overlay Darkness", name: hero_overlay_opacity, widget: select, options: ["0.5", "0.65", "0.75", "0.85", "0.92"], default: "0.75" }
-              - { label: "Hero Watermark Text", name: hero_watermark, widget: string }
-              - { label: "Customer Logo Size (px)", name: customer_logo_size, widget: select, options: ["50", "60", "80", "100", "120", "150"], default: "80" }
-              - { label: "Heading Size Scale (%)", name: heading_scale, widget: select, options: ["80", "90", "100", "110", "120"], default: "100" }
-              - { label: "Body Text Size (%)", name: body_text_size, widget: select, options: ["85", "90", "100", "110", "120"], default: "100" }
+              - { label: "Photo", name: image, widget: image }
+              - { label: "Caption", name: label, widget: string }
+          - { label: "About - Title", name: about_title, widget: string }
+          - { label: "About - Paragraph 1", name: about_text1, widget: text }
+          - { label: "About - Paragraph 2", name: about_text2, widget: text }
+          - { label: "CTA - Title", name: cta_title, widget: string }
+          - { label: "CTA - Subtitle", name: cta_subtitle, widget: string }
+          - { label: "CTA - Primary Button", name: cta_primary, widget: string }
+          - { label: "CTA - Secondary Button", name: cta_secondary, widget: string }
+          - label: "Industries Served"
+            name: industries
+            widget: list
+            field: { label: "Industry", name: industry, widget: string }
+          - { label: "Hero Title Size (%)", name: hero_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Hero Subtitle Size (%)", name: hero_subtitle_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Section Titles Size (%)", name: section_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Section Text Size (%)", name: section_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Gallery Strip Height (px)", name: gallery_strip_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
 
-          - widget: object
-            name: site
-            label: "⚙️ Site Settings"
-            fields:
-              - { label: "Company Name", name: company_name, widget: string }
-              - { label: "Email", name: email, widget: string }
-              - { label: "Phone", name: phone, widget: string }
-              - { label: "Footer Tagline", name: footer_tagline, widget: string }
-              - { label: "Bottom Tagline", name: tagline, widget: string }
-
-          - widget: object
-            name: home
-            label: "🏠 Home Page"
-            fields:
-              - { label: "Eyebrow Text", name: hero_eyebrow, widget: string }
-              - { label: "Main Title", name: hero_title, widget: text, hint: "Use \\n for line breaks" }
-              - { label: "Subtitle", name: hero_subtitle, widget: text }
-              - { label: "Primary Button", name: hero_cta_primary, widget: string }
-              - { label: "Secondary Button", name: hero_cta_secondary, widget: string }
-              - { label: "What We Do - Title", name: what_we_do_title, widget: string }
-              - { label: "What We Do - Text", name: what_we_do_text, widget: text }
-              - label: "Capabilities List"
-                name: what_we_do_capabilities
-                widget: list
-                field: { label: "Item", name: item, widget: string }
-              - { label: "3D Printing - Title", name: printing_title, widget: string }
-              - { label: "3D Printing - Text", name: printing_text, widget: text }
-              - { label: "Divider - Label", name: divider_label, widget: string }
-              - { label: "Divider - Title", name: divider_title, widget: string }
-              - { label: "Divider - Image", name: divider_image, widget: image }
-              - label: "Gallery Strip (3 photos)"
-                name: gallery_strip
-                widget: list
-                max: 3
-                fields:
-                  - { label: "Photo", name: image, widget: image }
-                  - { label: "Caption", name: label, widget: string }
-              - { label: "About - Title", name: about_title, widget: string }
-              - { label: "About - Paragraph 1", name: about_text1, widget: text }
-              - { label: "About - Paragraph 2", name: about_text2, widget: text }
-              - { label: "CTA - Title", name: cta_title, widget: string }
-              - { label: "CTA - Subtitle", name: cta_subtitle, widget: string }
-              - { label: "CTA - Primary Button", name: cta_primary, widget: string }
-              - { label: "CTA - Secondary Button", name: cta_secondary, widget: string }
-              - label: "Industries Served"
-                name: industries
-                widget: list
-                field: { label: "Industry", name: industry, widget: string }
-              - { label: "Hero Title Size (%)", name: hero_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Hero Subtitle Size (%)", name: hero_subtitle_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Section Titles Size (%)", name: section_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Section Text Size (%)", name: section_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Gallery Strip Height (px)", name: gallery_strip_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
-
-          - widget: object
+  - name: services
+    label: "🔧 Services Page"
+    files:
+      - name: services
+        label: "Services Content"
+        file: content/services.json
+        format: json
+        fields:
+          - { label: "Page Title", name: page_title, widget: string }
+          - label: "Services"
             name: services
-            label: "🔧 Services Page"
+            widget: list
             fields:
-              - { label: "Page Title", name: page_title, widget: string }
-              - label: "Services"
-                name: services
+              - { label: "Service ID", name: id, widget: string, hint: "Don't change" }
+              - { label: "Number", name: number, widget: string }
+              - { label: "Section Label", name: svc_label, widget: string }
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - label: "Specs"
+                name: specs
                 widget: list
                 fields:
-                  - { label: "Service ID", name: id, widget: string, hint: "Don't change" }
-                  - { label: "Number", name: number, widget: string }
-                  - { label: "Section Label", name: svc_label, widget: string }
-                  - { label: "Title", name: title, widget: string }
-                  - { label: "Description", name: description, widget: text }
-                  - label: "Specs"
-                    name: specs
-                    widget: list
-                    fields:
-                      - { label: "Label", name: spec_label, widget: string }
-                      - { label: "Value", name: value, widget: string }
-                  - { label: "Image", name: image, widget: image }
-              - { label: "Page Title Size (%)", name: page_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Service Title Size (%)", name: service_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Service Text Size (%)", name: service_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Service Image Height (px)", name: service_image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "400" }
+                  - { label: "Label", name: spec_label, widget: string }
+                  - { label: "Value", name: value, widget: string }
+              - { label: "Image", name: image, widget: image }
+          - { label: "Page Title Size (%)", name: page_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Service Title Size (%)", name: service_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Service Text Size (%)", name: service_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Service Image Height (px)", name: service_image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "400" }
 
-          - widget: object
-            name: gallery
-            label: "🖼️ Gallery"
+  - name: gallery
+    label: "🖼️ Gallery"
+    files:
+      - name: gallery
+        label: "Gallery Photos"
+        file: content/gallery.json
+        format: json
+        fields:
+          - { label: "Page Title", name: page_title, widget: string }
+          - { label: "Page Description", name: page_description, widget: text }
+          - label: "Gallery Items"
+            name: items
+            widget: list
             fields:
-              - { label: "Page Title", name: page_title, widget: string }
-              - { label: "Page Description", name: page_description, widget: text }
-              - label: "Gallery Items"
-                name: items
-                widget: list
-                fields:
-                  - { label: "Photo", name: image, widget: image }
-                  - { label: "Caption", name: label, widget: string }
-              - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Image Height (px)", name: image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
+              - { label: "Photo", name: image, widget: image }
+              - { label: "Caption", name: label, widget: string }
+          - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Image Height (px)", name: image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
 
-          - widget: object
-            name: contact
-            label: "📞 Contact Page"
-            fields:
-              - { label: "Page Title", name: page_title, widget: string }
-              - { label: "Page Description", name: page_description, widget: text }
-              - { label: "Section Title", name: section_title, widget: string }
-              - { label: "Section Text", name: section_text, widget: text }
-              - { label: "Email", name: email, widget: string }
-              - { label: "Phone", name: phone, widget: string }
-              - { label: "Response Time", name: response_time, widget: string }
-              - label: "Industries Served"
-                name: industries
-                widget: list
-                field: { label: "Industry", name: industry, widget: string }
-              - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-              - { label: "Text Size (%)", name: text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+  - name: contact
+    label: "📞 Contact Page"
+    files:
+      - name: contact
+        label: "Contact Page Content"
+        file: content/contact.json
+        format: json
+        fields:
+          - { label: "Page Title", name: page_title, widget: string }
+          - { label: "Page Description", name: page_description, widget: text }
+          - { label: "Section Title", name: section_title, widget: string }
+          - { label: "Section Text", name: section_text, widget: text }
+          - { label: "Email", name: email, widget: string }
+          - { label: "Phone", name: phone, widget: string }
+          - { label: "Response Time", name: response_time, widget: string }
+          - label: "Industries Served"
+            name: industries
+            widget: list
+            field: { label: "Industry", name: industry, widget: string }
+          - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
+          - { label: "Text Size (%)", name: text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
