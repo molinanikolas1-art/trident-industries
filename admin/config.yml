@@ -70,6 +70,16 @@ collections:
           - { label: "CTA - Subtitle", name: cta_subtitle, widget: string }
           - { label: "CTA - Primary Button", name: cta_primary, widget: string }
           - { label: "CTA - Secondary Button", name: cta_secondary, widget: string }
+          - { label: "Divider - Label", name: divider_label, widget: string }
+          - { label: "Divider - Title", name: divider_title, widget: string }
+          - { label: "Divider - Background Image", name: divider_image, widget: image }
+          - label: "Gallery Strip (3 photos)"
+            name: gallery_strip
+            widget: list
+            max: 3
+            fields:
+              - { label: "Photo", name: image, widget: image }
+              - { label: "Caption", name: label, widget: string }
           - label: "Industries Served"
             name: industries
             widget: list
@@ -138,6 +148,16 @@ collections:
           - { label: "Email", name: email, widget: string }
           - { label: "Phone", name: phone, widget: string }
           - { label: "Response Time", name: response_time, widget: string }
+          - { label: "Divider - Label", name: divider_label, widget: string }
+          - { label: "Divider - Title", name: divider_title, widget: string }
+          - { label: "Divider - Background Image", name: divider_image, widget: image }
+          - label: "Gallery Strip (3 photos)"
+            name: gallery_strip
+            widget: list
+            max: 3
+            fields:
+              - { label: "Photo", name: image, widget: image }
+              - { label: "Caption", name: label, widget: string }
           - label: "Industries Served"
             name: industries
             widget: list
