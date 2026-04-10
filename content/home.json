@@ -6,14 +6,16 @@
     "Inconel 718",
     "High-performance polymers"
   ],
+  "section_title_size": "Default",
   "about_label": "About Trident Industries",
+  "hero_subtitle_size": "Default",
   "hero_eyebrow": "Trident Industries, Inc.",
   "cta_secondary": "(949) 295-7541",
   "about_title": "Built on a Foundation of Manufacturing Excellence",
   "cta_subtitle": "For major project inquiries, contact our team directly. We respond within one business day.",
   "cta_title": "Ready to Build Something Exceptional?",
   "printing_label": "Additive Manufacturing",
-  "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing \u2014 Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
+  "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing — Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
   "gallery_strip": [
     {
       "image": "assets/untitled-design_22.png",
@@ -28,12 +30,16 @@
       "label": "CNC Milling"
     }
   ],
+  "hero_title_size": "Default",
+  "button_size": "Default",
   "hero_cta_primary": "View Capabilities",
   "divider_label": "Naval & Aerospace",
+  "divider_title_size": "Default",
   "printing_title": "Print What Machining Can't Touch",
   "about_text1": "Trident Industries, Incorporated was established with one mission: to manufacture components that perform in the environments where failure is not an option. We serve the aerospace, defense, naval, and automotive sectors with the precision, traceability, and engineering expertise these industries demand.",
   "divider_title": "Built for the Missions That Matter Most",
-  "about_text2": "Every part that leaves our facility has been engineered, programmed, machined, and inspected under the same roof \u2014 giving our clients a single, accountable partner from design to delivery.",
+  "divider_label_size": "Default",
+  "about_text2": "Every part that leaves our facility has been engineered, programmed, machined, and inspected under the same roof — giving our clients a single, accountable partner from design to delivery.",
   "hero_title": "Delivering solutions\n beyond conventional\n limits.",
   "cta_primary": "Send Project Details",
   "what_we_do_capabilities": [
@@ -45,8 +51,11 @@
   ],
   "divider_image": "assets/missile-hangar.jpg",
   "what_we_do_label": "What We Do",
-  "printing_text": "Internal channels, organic geometry, topology-optimized structures \u2014 our metal 3D printing capability opens design territory that conventional machining simply cannot reach. We bridge both worlds in one facility.",
+  "printing_text": "Internal channels, organic geometry, topology-optimized structures — our metal 3D printing capability opens design territory that conventional machining simply cannot reach. We bridge both worlds in one facility.",
+  "eyebrow_size": "20",
+  "section_text_size": "Default",
   "what_we_do_title": "Full-Spectrum Precision Manufacturing",
+  "gallery_strip_height": "Default",
   "industries": [
     "Aerospace",
     "Land Systems",
@@ -56,14 +65,5 @@
     "Industrial"
   ],
   "hero_subtitle": "Advanced manufacturing for aerospace, defense, automotive, and naval applications. Precision machined to tolerances that matter.",
-  "hero_title_size": "Default",
-  "hero_subtitle_size": "Default",
-  "section_title_size": "Default",
-  "section_text_size": "Default",
-  "gallery_strip_height": "Default",
-  "eyebrow_size": "Default",
-  "divider_title_size": "Default",
-  "divider_label_size": "Default",
-  "button_size": "Default",
   "cta_button_size": "Default"
 }
