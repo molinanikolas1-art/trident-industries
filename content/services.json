@@ -136,5 +136,7 @@
   "page_title_size": "Default",
   "service_title_size": "Default",
   "service_text_size": "Default",
-  "service_image_height": "Default"
+  "service_image_height": "Default",
+  "spec_label_size": "Default",
+  "spec_value_size": "Default"
 }

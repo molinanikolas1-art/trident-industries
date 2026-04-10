@@ -60,5 +60,10 @@
   "hero_subtitle_size": "Default",
   "section_title_size": "Default",
   "section_text_size": "Default",
-  "gallery_strip_height": "Default"
+  "gallery_strip_height": "Default",
+  "eyebrow_size": "Default",
+  "divider_title_size": "Default",
+  "divider_label_size": "Default",
+  "button_size": "Default",
+  "cta_button_size": "Default"
 }

@@ -85,5 +85,6 @@
     }
   ],
   "title_size": "Default",
-  "image_height": "Default"
+  "image_height": "Default",
+  "description_size": "Default"
 }

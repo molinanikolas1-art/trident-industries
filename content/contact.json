@@ -17,5 +17,9 @@
   "email": "sales@tridentindustriesinc.com",
   "section_title": "Let's Build Something Together",
   "title_size": "Default",
-  "text_size": "Default"
+  "text_size": "Default",
+  "page_title_size": "Default",
+  "page_desc_size": "Default",
+  "section_title_size": "Default",
+  "section_text_size": "Default"
 }
