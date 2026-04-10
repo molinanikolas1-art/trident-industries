@@ -1,7 +1,7 @@
 {
   "page_label": "Our Work",
   "page_title": "Parts Gallery",
-  "page_description": "A selection of components manufactured at Trident Industries — from production CNC runs to complex additive parts.",
+  "page_description": "A selection of components manufactured at Trident Industries \u2014 from production CNC runs to complex additive parts.",
   "items": [
     {
       "image": "assets/printed-housing.jpg",
@@ -83,5 +83,7 @@
       "image": "assets/untitled-design_16.png",
       "label": "High-temp polymer impeller"
     }
-  ]
+  ],
+  "title_size": "100",
+  "image_height": "300"
 }

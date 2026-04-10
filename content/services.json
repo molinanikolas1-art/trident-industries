@@ -15,7 +15,7 @@
         },
         {
           "label": "Tolerance",
-          "value": "±0.0001\" on critical features"
+          "value": "\u00b10.0001\" on critical features"
         },
         {
           "label": "Materials",
@@ -33,7 +33,7 @@
       "number": "02",
       "label": "Additive Manufacturing",
       "title": "Metal & Polymer 3D Printing",
-      "description": "Additive manufacturing extends what's possible — internal cooling channels, lattice-optimized structures, and organic geometries that no CNC can reach. We produce metal parts in stainless, titanium, and Inconel alongside high-performance polymer components.",
+      "description": "Additive manufacturing extends what's possible \u2014 internal cooling channels, lattice-optimized structures, and organic geometries that no CNC can reach. We produce metal parts in stainless, titanium, and Inconel alongside high-performance polymer components.",
       "specs": [
         {
           "label": "Processes",
@@ -67,7 +67,7 @@
         },
         {
           "label": "Accuracy",
-          "value": "±0.005mm across full surface"
+          "value": "\u00b10.005mm across full surface"
         },
         {
           "label": "Output",
@@ -85,7 +85,7 @@
       "number": "04",
       "label": "Reverse Engineering",
       "title": "Reverse Engineering",
-      "description": "We reconstruct legacy, obsolete, or competitor components into fully parametric CAD models — ready to machine, modify, or improve. Starting from scan data, physical measurements, or worn originals, we deliver production-ready documentation.",
+      "description": "We reconstruct legacy, obsolete, or competitor components into fully parametric CAD models \u2014 ready to machine, modify, or improve. Starting from scan data, physical measurements, or worn originals, we deliver production-ready documentation.",
       "specs": [
         {
           "label": "Input",
@@ -111,7 +111,7 @@
       "number": "05",
       "label": "Design & Programming",
       "title": "CAD / CAM Design & Engineering",
-      "description": "Our engineering team handles the complete design-to-manufacture pipeline. From DFM analysis and tolerance stack-up review to fixture design and CNC program generation — every decision is made with machinability and performance in mind.",
+      "description": "Our engineering team handles the complete design-to-manufacture pipeline. From DFM analysis and tolerance stack-up review to fixture design and CNC program generation \u2014 every decision is made with machinability and performance in mind.",
       "specs": [
         {
           "label": "CAD",
@@ -132,5 +132,9 @@
       ],
       "image": "assets/brackets-flat.jpg"
     }
-  ]
+  ],
+  "page_title_size": "100",
+  "service_title_size": "100",
+  "service_text_size": "100",
+  "service_image_height": "400"
 }

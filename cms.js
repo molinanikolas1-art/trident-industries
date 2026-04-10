@@ -1,5 +1,7 @@
 (function(){
   var bust='?v='+Date.now();
+  function scale(sel,pct){if(!pct||pct==='100')return;var els=document.querySelectorAll(sel);els.forEach(function(e){var cur=parseFloat(getComputedStyle(e).fontSize);e.style.fontSize=(cur*parseInt(pct)/100)+'px';});}
+  function imgH(sel,px){if(!px)return;document.querySelectorAll(sel).forEach(function(i){i.style.height=px+'px';i.style.objectFit='cover';});}
   function set(s,v){var e=document.querySelector(s);if(e&&v!=null)e.textContent=v;}
   function setAll(s,v){if(!v)return;document.querySelectorAll(s).forEach(function(e){e.textContent=v;});}
 
@@ -43,6 +45,8 @@
     if(hb[0]&&d.hero_cta_primary)hb[0].textContent=d.hero_cta_primary;
     if(hb[1]&&d.hero_cta_secondary)hb[1].textContent=d.hero_cta_secondary;
     if(d.industries){var band=document.querySelector('.industries-band-inner');if(band)band.innerHTML=d.industries.map(function(i){return'<div class="industry-item"><span class="industry-dot"></span><span>'+i+'</span></div>';}).join('');}
+    scale('.gallery-page-hero h1',d.title_size);
+    if(d.image_height)imgH('.gallery-item img',d.image_height);
     var st=document.querySelectorAll('.split-title');
     var sx=document.querySelectorAll('.split-text');
     var sl=document.querySelectorAll('.split-list');
@@ -70,6 +74,11 @@
     var cb=document.querySelectorAll('.cta-strip-actions .btn');
     if(cb[0]&&d.cta_primary)cb[0].textContent=d.cta_primary;
     if(cb[1]&&d.cta_secondary)cb[1].textContent=d.cta_secondary;
+    scale('.hero-title',d.hero_title_size);
+    scale('.hero-sub',d.hero_subtitle_size);
+    scale('.split-title,.about-title,.cta-strip-title',d.section_title_size);
+    scale('.split-text,.about-text,.cta-strip-sub',d.section_text_size);
+    if(d.gallery_strip_height)imgH('.gallery-strip-item img',d.gallery_strip_height);
   }catch(e){}}
 
   /* SERVICES */
@@ -87,6 +96,10 @@
       if(im&&svc.image)im.src='/'+svc.image;
       if(sp&&svc.specs)sp.innerHTML=svc.specs.map(function(s){return'<div class="service-spec"><span class="service-spec-label">'+s.label+'</span><span class="service-spec-value">'+s.value+'</span></div>';}).join('');
     });
+    scale('.page-hero-title',d.page_title_size);
+    scale('.service-detail-title',d.service_title_size);
+    scale('.service-detail-text',d.service_text_size);
+    if(d.service_image_height)imgH('.service-detail-image img',d.service_image_height);
   }catch(e){}}
 
   /* GALLERY */
@@ -108,6 +121,8 @@
     updateLinks(d.phone,d.email);
     if(d.response_time){var rt=document.querySelector('.contact-details .contact-detail:last-child div span:last-child');if(rt)rt.textContent=d.response_time;}
     var il=document.querySelector('.contact-industry-list');
+    scale('.contact-page-hero h1,.contact-info-title',d.title_size);
+    scale('.contact-info-text,.contact-page-hero p',d.text_size);
     if(il&&d.industries)il.innerHTML=d.industries.map(function(i){return'<li>'+i+'</li>';}).join('');
   }catch(e){}}
 
