@@ -1,11 +1,11 @@
 {
-  "accent_color": "#c41a1a",
   "accent_hover": "#a81515",
-  "background_color": "#080808",
+  "nav_logo": "assets/trident-original-bigger.png",
+  "accent_color": "#c41a1a",
   "surface_color": "#111111",
   "text_color": "#e0e8f8",
-  "nav_logo": "assets/trident-original-bigger.png",
+  "background_color": "#080808",
   "hero_image": "assets/missile-flight.jpg",
   "hero_overlay_opacity": "0.75",
-  "hero_watermark": "PRECISION"
+  "hero_watermark": " "
 }
