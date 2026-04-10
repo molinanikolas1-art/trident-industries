@@ -86,6 +86,24 @@ collections:
             widget: list
             field: { label: "Industry", name: industry, widget: string }
 
+
+  # ── CUSTOMERS / CLIENTS ────────────────────────────────────────────────
+  - name: customers
+    label: "🏢 Customers"
+    files:
+      - name: customers
+        label: "Client Logos"
+        file: content/customers.json
+        format: json
+        fields:
+          - { label: "Section Title", name: section_title, widget: string, default: "Trusted By" }
+          - label: "Customer Logos"
+            name: customers
+            widget: list
+            fields:
+              - { label: "Company Name", name: name, widget: string }
+              - { label: "Logo", name: logo, widget: image }
+
   # ── SERVICES PAGE ──────────────────────────────────────────────────────
   - name: services
     label: "🔧 Services Page"

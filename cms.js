@@ -108,7 +108,17 @@
     if(il&&d.industries)il.innerHTML=d.industries.map(function(i){return'<li>'+i+'</li>';}).join('');
   }catch(e){}}
 
+
+  /* CUSTOMERS */
+  async function loadCustomers(){var grid=document.querySelector('.customers-grid');if(!grid)return;try{
+    var d=await fetch('/content/customers.json'+bust).then(r=>r.json());
+    if(d.section_title)set('.customers-title',d.section_title);
+    if(d.customers&&d.customers.length>0){
+      grid.innerHTML=d.customers.map(function(c){return'<div class="customer-item"><img src="/'+c.logo+'" alt="'+c.name+'" loading="lazy"/><span>'+c.name+'</span></div>';}).join('');
+    }
+  }catch(e){}}
+
   document.addEventListener('DOMContentLoaded',function(){
-    loadDesign();loadSite();loadHome();loadServices();loadGallery();loadContact();
+    loadDesign();loadSite();loadHome();loadServices();loadGallery();loadContact();loadCustomers();
   });
 })();
