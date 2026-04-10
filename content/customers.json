@@ -1,4 +1,9 @@
 {
   "section_title": "Trusted By",
-  "customers": []
+  "customers": [
+    {
+      "logo": "assets/img_3810.jpeg",
+      "name": "EME inc"
+    }
+  ]
 }
