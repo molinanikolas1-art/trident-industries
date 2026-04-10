@@ -7,5 +7,8 @@
   "background_color": "#080808",
   "hero_image": "assets/missile-flight.jpg",
   "hero_overlay_opacity": "0.75",
-  "hero_watermark": " "
+  "hero_watermark": " ",
+  "customer_logo_size": "80",
+  "heading_scale": "100",
+  "body_text_size": "100"
 }
