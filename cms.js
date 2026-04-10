@@ -2,7 +2,7 @@
   var bust='?v='+Date.now();
   function set(s,v){var e=document.querySelector(s);if(e&&v!=null)e.textContent=v;}
   function setAll(s,v){if(!v)return;document.querySelectorAll(s).forEach(function(e){e.textContent=v;});}
-  function sz(sel,px){if(!px||px==='16')return;document.querySelectorAll(sel).forEach(function(e){e.style.fontSize=px+'px';});}
+  function sz(sel,px){if(!px||px==='Default'||px==='')return;document.querySelectorAll(sel).forEach(function(e){e.style.fontSize=px+'px';});}
   function imgH(sel,px){if(!px)return;document.querySelectorAll(sel).forEach(function(i){i.style.height=px+'px';i.style.objectFit='cover';});}
   function updateLinks(phone,email){
     if(phone)document.querySelectorAll('a[href^="tel:"]').forEach(function(a){var r=phone.replace(/\D/g,'');a.href='tel:+1'+r;if(a.textContent.includes('(')||a.textContent.includes('+'))a.textContent=phone;});

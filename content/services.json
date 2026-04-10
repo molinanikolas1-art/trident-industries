@@ -133,8 +133,8 @@
       "image": "assets/brackets-flat.jpg"
     }
   ],
-  "page_title_size": "100",
-  "service_title_size": "100",
-  "service_text_size": "100",
-  "service_image_height": "400"
+  "page_title_size": "Default",
+  "service_title_size": "Default",
+  "service_text_size": "Default",
+  "service_image_height": "Default"
 }

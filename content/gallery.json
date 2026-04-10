@@ -84,6 +84,6 @@
       "label": "High-temp polymer impeller"
     }
   ],
-  "title_size": "100",
-  "image_height": "300"
+  "title_size": "Default",
+  "image_height": "Default"
 }

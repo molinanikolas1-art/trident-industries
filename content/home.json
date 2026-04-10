@@ -56,9 +56,9 @@
     "Industrial"
   ],
   "hero_subtitle": "Advanced manufacturing for aerospace, defense, automotive, and naval applications. Precision machined to tolerances that matter.",
-  "hero_title_size": "100",
-  "hero_subtitle_size": "100",
-  "section_title_size": "100",
-  "section_text_size": "100",
-  "gallery_strip_height": "300"
+  "hero_title_size": "Default",
+  "hero_subtitle_size": "Default",
+  "section_title_size": "Default",
+  "section_text_size": "Default",
+  "gallery_strip_height": "Default"
 }
