@@ -84,15 +84,11 @@ collections:
             fields:
               - { label: "Photo", name: image, widget: image }
               - { label: "Caption", name: label, widget: string }
-          - { label: "Page Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Gallery Image Height (px)", name: image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
           - { label: "Hero Title Size (%)", name: hero_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
           - { label: "Hero Subtitle Size (%)", name: hero_subtitle_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
           - { label: "Section Titles Size (%)", name: section_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
           - { label: "Section Text Size (%)", name: section_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
           - { label: "Gallery Strip Image Height (px)", name: gallery_strip_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
-          - { label: "Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Text Size (%)", name: text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
           - label: "Industries Served"
             name: industries
             widget: list
@@ -133,14 +129,14 @@ collections:
             fields:
               - { label: "Service ID", name: id, widget: string, hint: "Don't change this" }
               - { label: "Number", name: number, widget: string }
-              - { label: "Label", name: label, widget: string }
+              - { label: "Label", name: svc_label, widget: string }
               - { label: "Title", name: title, widget: string }
               - { label: "Description", name: description, widget: text }
               - label: "Specs"
                 name: specs
                 widget: list
                 fields:
-                  - { label: "Label", name: label, widget: string }
+                  - { label: "Label", name: svc_section_label, widget: string }
                   - { label: "Value", name: value, widget: string }
               - { label: "Image", name: image, widget: image }
           - { label: "Page Title Size (%)", name: page_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
@@ -195,14 +191,3 @@ collections:
             fields:
               - { label: "Photo", name: image, widget: image }
               - { label: "Caption", name: label, widget: string }
-          - { label: "Page Title Size (%)", name: title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Gallery Image Height (px)", name: image_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
-          - { label: "Hero Title Size (%)", name: hero_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Hero Subtitle Size (%)", name: hero_subtitle_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Section Titles Size (%)", name: section_title_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Section Text Size (%)", name: section_text_size, widget: select, options: ["80", "90", "100", "110", "120", "130", "150"], default: "100" }
-          - { label: "Gallery Strip Image Height (px)", name: gallery_strip_height, widget: select, options: ["200", "250", "300", "350", "400", "500"], default: "300" }
-          - label: "Industries Served"
-            name: industries
-            widget: list
-            field: { label: "Industry", name: industry, widget: string }
