@@ -13,11 +13,27 @@
   "cta_subtitle": "For major project inquiries, contact our team directly. We respond within one business day.",
   "cta_title": "Ready to Build Something Exceptional?",
   "printing_label": "Additive Manufacturing",
-  "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing \u2014 Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
+  "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing — Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
+  "gallery_strip": [
+    {
+      "image": "assets/untitled-design_22.png",
+      "label": "Automotive"
+    },
+    {
+      "image": "assets/untitled-design.png",
+      "label": "3D Printing"
+    },
+    {
+      "image": "assets/brackets-polished.jpg",
+      "label": "CNC Milling"
+    }
+  ],
   "hero_cta_primary": "View Capabilities",
+  "divider_label": "Naval & Aerospace",
   "printing_title": "Print What Machining Can't Touch",
   "about_text1": "Trident Industries, Incorporated was established with one mission: to manufacture components that perform in the environments where failure is not an option. We serve the aerospace, defense, naval, and automotive sectors with the precision, traceability, and engineering expertise these industries demand.",
-  "about_text2": "Every part that leaves our facility has been engineered, programmed, machined, and inspected under the same roof \u2014 giving our clients a single, accountable partner from design to delivery.",
+  "divider_title": "Built for the Missions That Matter Most",
+  "about_text2": "Every part that leaves our facility has been engineered, programmed, machined, and inspected under the same roof — giving our clients a single, accountable partner from design to delivery.",
   "hero_title": "Delivering solutions\n beyond conventional\n limits.",
   "cta_primary": "Send Project Details",
   "what_we_do_capabilities": [
@@ -27,8 +43,9 @@
     "Reverse Engineering & CAD/CAM",
     "Structural & Aerospace Components"
   ],
+  "divider_image": "assets/missile-hangar.jpg",
   "what_we_do_label": "What We Do",
-  "printing_text": "Internal channels, organic geometry, topology-optimized structures \u2014 our metal 3D printing capability opens design territory that conventional machining simply cannot reach. We bridge both worlds in one facility.",
+  "printing_text": "Internal channels, organic geometry, topology-optimized structures — our metal 3D printing capability opens design territory that conventional machining simply cannot reach. We bridge both worlds in one facility.",
   "what_we_do_title": "Full-Spectrum Precision Manufacturing",
   "industries": [
     "Aerospace",
@@ -38,23 +55,5 @@
     "Automotive",
     "Industrial"
   ],
-  "hero_subtitle": "Advanced manufacturing for aerospace, defense, automotive, and naval applications. Precision machined to tolerances that matter.",
-  "divider_label": "Naval & Aerospace",
-  "divider_title": "Built for the Missions That Matter Most",
-  "divider_image": "assets/missile-hangar.jpg",
-  "gallery_strip": [
-    {
-      "image": "assets/control-arm.jpg",
-      "label": "Automotive"
-    },
-    {
-      "image": "assets/printed-fairing.jpg",
-      "label": "3D Printing"
-    },
-    {
-      "image": "assets/brackets-polished.jpg",
-      "label": "CNC Milling"
-    }
-  ],
-  "hero_watermark": "PRECISION"
+  "hero_subtitle": "Advanced manufacturing for aerospace, defense, automotive, and naval applications. Precision machined to tolerances that matter."
 }
