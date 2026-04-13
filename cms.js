@@ -33,11 +33,14 @@
     var grid=document.querySelector('.customers-grid');
     if(grid){
       if(cu.section_title)set('.customers-title',cu.section_title);
+      sz('.customers-title',cu.section_title_size);
       if(cu.customers&&cu.customers.length>0){
         var defaultSize=cu.customer_logo_size||'80';
+        var nameSize=cu.company_name_size;
         grid.innerHTML=cu.customers.map(function(x){
           var s=(x.logo_size&&x.logo_size!=='Default')?x.logo_size:defaultSize;
-          return'<div class="customer-item"><img src="/'+x.logo+'" alt="'+x.name+'" style="height:'+s+'px" loading="lazy"/><span>'+x.name+'</span></div>';
+          var ns=(nameSize&&nameSize!=='Default')?'style="font-size:'+nameSize+'px"':'';
+          return'<div class="customer-item"><img src="/'+x.logo+'" alt="'+x.name+'" style="height:'+s+'px" loading="lazy"/><span '+ns+'>'+x.name+'</span></div>';
         }).join('');
       }
     }
