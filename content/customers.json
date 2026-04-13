@@ -1,7 +1,7 @@
 {
   "section_title": "Trusted By",
-  "section_title_size": "Default",
-  "company_name_size": "Default",
+  "section_title_size": "28",
+  "company_name_size": "18",
   "customers": [
     {
       "logo": "assets/eme-logo.png",
