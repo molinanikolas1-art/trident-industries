@@ -9,9 +9,6 @@
     if(email)document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.href='mailto:'+email;if(a.textContent.includes('@'))a.textContent=email;});
   }
   function F(url){return fetch(url+bust).then(function(r){return r.json();});}
-  function reveal(){document.documentElement.classList.add('cms-ready');}
-  // Safety net: if anything stalls, reveal after 800ms anyway
-  setTimeout(reveal,800);
 
   document.addEventListener('DOMContentLoaded',async function(){try{
     var d=await F('/content/design.json'),s=await F('/content/site.json'),cu=await F('/content/customers.json');
@@ -135,5 +132,5 @@
       sz('.contact-info-text',c.section_text_size);
     }
 
-  }catch(e){console.error('CMS:',e);}finally{reveal();}});
+  }catch(e){console.error('CMS:',e);}});
 })();
