@@ -32,6 +32,10 @@
       "label": "CNC Machined Parts"
     },
     {
+      "image": "assets/brackets-flat.jpg",
+      "label": "Aluminum Brackets"
+    },
+    {
       "label": "High-strength polymer jig",
       "image": "assets/img_1557.png"
     },
@@ -74,10 +78,6 @@
     {
       "image": "assets/untitled-design_11.png",
       "label": "Turned and milled adapters"
-    },
-    {
-      "image": "assets/untitled-design_16.png",
-      "label": "High-temp polymer impeller"
     }
   ],
   "title_size": "Default",
