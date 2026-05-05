@@ -8,10 +8,6 @@
       "label": "3D Printed Housing"
     },
     {
-      "image": "assets/brackets-polished.jpg",
-      "label": "Machined Brackets"
-    },
-    {
       "image": "assets/shop-floor.jpg",
       "label": "Aluminum Components"
     },
@@ -22,6 +18,10 @@
     {
       "image": "assets/brackets-standing.jpg",
       "label": "CNC Machined Parts"
+    },
+    {
+      "image": "assets/brackets-flat.jpg",
+      "label": "Aluminum Brackets"
     },
     {
       "label": "High-strength polymer jig",
