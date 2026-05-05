@@ -82,6 +82,10 @@
     {
       "image": "assets/valve-component-breakdown.jpg",
       "label": "Exploded Valve Assembly"
+    },
+    {
+      "image": "assets/ball-valve.jpg",
+      "label": "Ball Valve with Lever Handle"
     }
   ],
   "title_size": "Default",
