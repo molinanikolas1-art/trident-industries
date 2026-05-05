@@ -4,24 +4,14 @@
   "company_name_size": "24",
   "customers": [
     {
-      "logo": "assets/eme-logo.png",
-      "name": "EME inc",
-      "logo_size": "150"
-    },
-    {
       "name": "Notthoff Engineering L.A. Inc.",
       "logo": "assets/notthoff-logo.png",
       "logo_size": "80"
     },
     {
-      "name": "R1 Demo Solutions",
-      "logo": "assets/r1demo-logo.png",
+      "name": "EME inc",
+      "logo": "assets/eme-logo.png",
       "logo_size": "150"
-    },
-    {
-      "name": "L.A. Road Rage",
-      "logo": "assets/roadrags-logo.png",
-      "logo_size": "100"
     },
     {
       "name": "Kubota",
@@ -37,6 +27,16 @@
       "name": "ABC Smog",
       "logo": "assets/abcsmog-logo.png",
       "logo_size": "100"
+    },
+    {
+      "name": "L.A. Road Rage",
+      "logo": "assets/roadrags-logo.png",
+      "logo_size": "100"
+    },
+    {
+      "name": "R1 Demo Solutions",
+      "logo": "assets/r1demo-logo.png",
+      "logo_size": "150"
     }
   ],
   "customer_logo_size": "80"
