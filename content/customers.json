@@ -20,12 +20,12 @@
     },
     {
       "name": "Kubota",
-      "logo": "assets/kubota-logo.png",
+      "logo": "assets/kubota-logo.jpg",
       "logo_size": "100"
     },
     {
       "name": "Bobcat",
-      "logo": "assets/bobcat-logo.png",
+      "logo": "assets/bobcat-logo.jpg",
       "logo_size": "80"
     },
     {
