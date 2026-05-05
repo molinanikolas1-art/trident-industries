@@ -78,6 +78,22 @@
     {
       "image": "assets/untitled-design_11.png",
       "label": "Turned and milled adapters"
+    },
+    {
+      "image": "assets/butterfly-valve-assembly.jpg",
+      "label": "Butterfly Valve Assembly"
+    },
+    {
+      "image": "assets/wafer-butterfly-valve.jpg",
+      "label": "Wafer-Style Butterfly Valve"
+    },
+    {
+      "image": "assets/lever-butterfly-valve.jpg",
+      "label": "Lever-Operated Valve"
+    },
+    {
+      "image": "assets/valve-component-breakdown.jpg",
+      "label": "Exploded Valve Assembly"
     }
   ],
   "title_size": "Default",
