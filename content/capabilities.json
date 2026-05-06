@@ -1,0 +1,21 @@
+{
+  "eyebrow": "Capabilities",
+  "section_title": "What We Deliver",
+  "section_title_size": "Default",
+  "card_title_size": "Default",
+  "card_text_size": "Default",
+  "cards": [
+    {
+      "title": "Advanced System Engineering",
+      "text": "Trident Industries' engineering team specializes in cutting-edge hardware solutions that address the modernization priorities of the Department of Defense (DoD), including classified initiatives."
+    },
+    {
+      "title": "Advanced Manufacturing",
+      "text": "Trident boasts a substantial manufacturing facility dedicated to the fabrication of ground support hardware."
+    },
+    {
+      "title": "Integration and Enhancement",
+      "text": "Trident is at the forefront of developing cutting-edge defense hardware, including advanced land systems and a wide array of innovative solutions."
+    }
+  ]
+}

@@ -11,7 +11,8 @@
   function F(url){return fetch(url+bust).then(function(r){return r.json();});}
 
   document.addEventListener('DOMContentLoaded',async function(){try{
-    var d=await F('/content/design.json'),s=await F('/content/site.json'),cu=await F('/content/customers.json');
+    var d=await F('/content/design.json'),s=await F('/content/site.json');
+    var cap=null;try{cap=await F('/content/capabilities.json');}catch(e){}
     var root=document.documentElement;
 
     /* DESIGN */
@@ -29,19 +30,24 @@
     updateLinks(s.phone,s.email);setAll('.footer-tagline',s.footer_tagline);
     if(s.tagline)setAll('.footer-bottom span:last-child',s.tagline);
 
-    /* CUSTOMERS */
-    var grid=document.querySelector('.customers-grid');
-    if(grid){
-      if(cu.section_title)set('.customers-title',cu.section_title);
-      sz('.customers-title',cu.section_title_size);
-      if(cu.customers&&cu.customers.length>0){
-        var defaultSize=cu.customer_logo_size||'80';
-        var nameSize=cu.company_name_size;
-        grid.innerHTML=cu.customers.map(function(x){
-          var s=(x.logo_size&&x.logo_size!=='Default')?x.logo_size:defaultSize;
-          var ns=(nameSize&&nameSize!=='Default')?'style="font-size:'+nameSize+'px"':'';
-          return'<div class="customer-item"><img src="/'+x.logo+'" alt="'+x.name+'" style="height:'+s+'px" loading="lazy"/><span '+ns+'>'+x.name+'</span></div>';
-        }).join('');
+    /* CAPABILITIES */
+    var capGrid=document.querySelector('.capabilities-grid');
+    if(capGrid&&cap){
+      if(cap.eyebrow){var eb=document.querySelector('.capabilities-section .label');if(eb)eb.textContent=cap.eyebrow;}
+      if(cap.section_title)set('.capabilities-title',cap.section_title);
+      sz('.capabilities-title',cap.section_title_size);
+      if(cap.cards&&cap.cards.length>0){
+        var existing=capGrid.querySelectorAll('.capability-card');
+        cap.cards.forEach(function(c,i){
+          var card=existing[i];
+          if(!card)return;
+          var t=card.querySelector('.capability-title');
+          var p=card.querySelector('.capability-text');
+          if(t&&c.title)t.textContent=c.title;
+          if(p&&c.text)p.textContent=c.text;
+          if(t)sz('.capability-card:nth-child('+(i+1)+') .capability-title',cap.card_title_size);
+          if(p)sz('.capability-card:nth-child('+(i+1)+') .capability-text',cap.card_text_size);
+        });
       }
     }
 
