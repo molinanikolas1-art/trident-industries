@@ -58,6 +58,61 @@
     @media (max-width: 480px) {
       .gallery-masonry { grid-template-columns: 1fr; grid-auto-rows: 260px; }
     }
+
+    /* Lightbox */
+    .gallery-item img { cursor: zoom-in; }
+    .lightbox {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.95);
+      display: none; align-items: center; justify-content: center;
+      z-index: 10000;
+      padding: 40px;
+      cursor: zoom-out;
+      animation: lbFade 0.2s ease-out;
+    }
+    .lightbox.open { display: flex; }
+    @keyframes lbFade { from { opacity: 0 } to { opacity: 1 } }
+    .lightbox img {
+      max-width: 100%; max-height: 100%;
+      width: auto; height: auto;
+      object-fit: contain;
+      box-shadow: 0 20px 80px rgba(0,0,0,0.8);
+    }
+    .lightbox-caption {
+      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+      color: #fff; font-family: var(--font-display);
+      font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase;
+      background: rgba(0,0,0,0.6); padding: 8px 18px;
+      border-left: 2px solid #c41a1a;
+    }
+    .lightbox-close {
+      position: absolute; top: 20px; right: 24px;
+      width: 44px; height: 44px;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; font-size: 24px; line-height: 1;
+      cursor: pointer; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+    .lightbox-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 50px; height: 50px;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; font-size: 22px; cursor: pointer;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-nav:hover { background: rgba(255,255,255,0.2); }
+    .lightbox-prev { left: 24px; }
+    .lightbox-next { right: 24px; }
+    @media (max-width: 600px) {
+      .lightbox { padding: 20px; }
+      .lightbox-nav { width: 40px; height: 40px; font-size: 18px; }
+      .lightbox-prev { left: 8px; } .lightbox-next { right: 8px; }
+    }
+    body.lb-open { overflow: hidden; }
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -240,6 +295,55 @@
         }
       });
     }
+  </script>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <img id="lightbox-img" alt="" />
+    <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      var lbCap = document.getElementById('lightbox-caption');
+      var prev = lb.querySelector('.lightbox-prev');
+      var next = lb.querySelector('.lightbox-next');
+      var closeBtn = lb.querySelector('.lightbox-close');
+      var idx = 0;
+      function items(){ return Array.from(document.querySelectorAll('.gallery-item img')); }
+      function show(i){
+        var imgs = items(); if(!imgs.length) return;
+        idx = (i + imgs.length) % imgs.length;
+        var img = imgs[idx];
+        lbImg.src = img.src;
+        lbImg.alt = img.alt || '';
+        var label = img.closest('.gallery-item').querySelector('.gallery-item-label');
+        lbCap.textContent = label ? label.textContent : (img.alt || '');
+      }
+      function open(i){ show(i); lb.classList.add('open'); document.body.classList.add('lb-open'); }
+      function close(){ lb.classList.remove('open'); document.body.classList.remove('lb-open'); }
+      // Delegate click on gallery (handles dynamically loaded items from cms.js)
+      document.addEventListener('click', function(e){
+        var img = e.target.closest('.gallery-item img');
+        if(img){ e.preventDefault(); var imgs = items(); open(imgs.indexOf(img)); }
+      });
+      lb.addEventListener('click', function(e){
+        if(e.target === lb || e.target === lbImg) close();
+      });
+      closeBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+      prev.addEventListener('click', function(e){ e.stopPropagation(); show(idx - 1); });
+      next.addEventListener('click', function(e){ e.stopPropagation(); show(idx + 1); });
+      document.addEventListener('keydown', function(e){
+        if(!lb.classList.contains('open')) return;
+        if(e.key === 'Escape') close();
+        else if(e.key === 'ArrowLeft') show(idx - 1);
+        else if(e.key === 'ArrowRight') show(idx + 1);
+      });
+    })();
   </script>
 </body>
 </html>
