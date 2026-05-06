@@ -1164,27 +1164,28 @@ button { cursor: pointer; background: none; border: none; }
   gap: clamp(var(--space-10), 5vw, var(--space-20));
   margin-bottom: var(--space-10);
 }
-.footer-brand .logo-top { font-size: 0.85rem; }
+.footer-brand .logo-top { font-size: 1.05rem; }
+.footer-brand .logo-full { width: clamp(170px, 16vw, 220px); height: auto; }
 .footer-tagline {
-  font-size: var(--text-xs);
+  font-size: var(--text-base);
   color: var(--gray-4);
-  margin-top: var(--space-3);
+  margin-top: var(--space-4);
   line-height: 1.6;
-  max-width: 240px;
+  max-width: 320px;
 }
 .footer-cols { display: flex; gap: clamp(var(--space-10), 5vw, var(--space-16)); }
-.footer-col { display: flex; flex-direction: column; gap: var(--space-3); }
+.footer-col { display: flex; flex-direction: column; gap: var(--space-4); }
 .footer-col-title {
   font-family: var(--font-display);
-  font-size: var(--text-xs);
+  font-size: var(--text-base);
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: var(--space-1);
+  margin-bottom: var(--space-2);
 }
 .footer-col a {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--gray-4);
   transition: color var(--transition);
 }
@@ -1195,7 +1196,7 @@ button { cursor: pointer; background: none; border: none; }
   align-items: center;
   padding-top: var(--space-6);
   border-top: 1px solid var(--gray-2);
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   color: var(--gray-4);
   flex-wrap: wrap;
   gap: var(--space-3);
@@ -1304,7 +1305,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .capabilities-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2.75rem, 5.5vw, 4.25rem);
   font-weight: 800;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -1328,8 +1329,8 @@ button { cursor: pointer; background: none; border: none; }
   padding: var(--space-6) 0;
 }
 .capability-icon {
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   color: var(--white);
 }
 .capability-icon svg {
@@ -1338,7 +1339,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .capability-title {
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  font-size: clamp(1.625rem, 2.6vw, 2.125rem);
   font-weight: 700;
   letter-spacing: 0.01em;
   color: var(--white);
@@ -1347,7 +1348,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .capability-text {
   font-family: var(--font-body);
-  font-size: var(--text-base);
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
   color: var(--gray-5);
   line-height: 1.65;
   margin: 0;
