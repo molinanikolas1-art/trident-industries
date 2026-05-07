@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trident Industries — Brochure</title>
-  <meta name="description" content="Trident Industries — advanced manufacturing for aerospace, defense, and weapon systems. Partner with a single-source manufacturer trusted by the industries that demand zero compromise." />
-  <meta property="og:title" content="Trident Industries — Brochure" />
-  <meta property="og:description" content="Advanced manufacturing for aerospace, defense, and weapon systems." />
+  <title>Trident Industries — Capabilities Catalog</title>
+  <meta name="description" content="Trident Industries Capabilities Catalog — services, materials, machines, and tolerances. Advanced manufacturing for aerospace, defense, and weapon systems." />
+  <meta property="og:title" content="Trident Industries — Capabilities Catalog" />
+  <meta property="og:description" content="Services, materials, machines, and tolerances. Advanced manufacturing for aerospace, defense, and weapon systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tridentindustriesinc.com/brochure.html" />
   <meta property="og:image" content="https://tridentindustriesinc.com/assets/og-image.jpg" />
@@ -38,7 +38,6 @@
       min-height: 100vh;
     }
     a { color: inherit; text-decoration: none; }
-    .display { font-family: 'Barlow Condensed', sans-serif; }
 
     /* TOP BAR */
     .topbar {
@@ -200,11 +199,90 @@
       flex-shrink: 0;
     }
 
-    /* INDUSTRIES BAND */
-    .industries {
+    /* MATERIALS / MACHINES — catalog blocks */
+    .catalog {
       background: var(--gray-1);
       border-top: 1px solid var(--gray-2);
       border-bottom: 1px solid var(--gray-2);
+    }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 80px);
+      margin-top: clamp(40px, 5vw, 56px);
+    }
+    .cat-block h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.5rem, 2.4vw, 2rem);
+      line-height: 1.1; letter-spacing: 0.02em;
+      text-transform: uppercase; color: var(--white);
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--red);
+    }
+    .cat-subhead {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 13px;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gray-4);
+      margin-top: 24px; margin-bottom: 10px;
+    }
+    .cat-list {
+      list-style: none; padding: 0;
+    }
+    .cat-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--gray-3);
+      font-size: 1rem;
+      color: var(--gray-5);
+      display: flex; gap: 14px; align-items: baseline;
+    }
+    .cat-list li:last-child { border-bottom: none; }
+    .cat-list .name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; letter-spacing: 0.04em;
+      color: var(--white); flex-shrink: 0;
+      font-size: 1.05rem;
+      min-width: 110px;
+    }
+    .cat-list .desc {
+      color: var(--gray-5);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* CAPACITIES grid */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: clamp(40px, 5vw, 56px);
+      background: var(--gray-3);
+      border: 1px solid var(--gray-3);
+    }
+    .spec-card {
+      background: var(--gray-1);
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .spec-card .spec-value {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.5rem, 2.4vw, 2rem);
+      line-height: 1.1; color: var(--white);
+      margin-bottom: 6px;
+    }
+    .spec-card .spec-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gray-4);
+    }
+
+    /* INDUSTRIES BAND */
+    .industries {
+      background: var(--black);
       text-align: center;
     }
     .ind-list {
@@ -228,60 +306,9 @@
       background: var(--red); border-radius: 50%;
     }
 
-    /* SUPPLIER CTA */
-    .supplier {
-      background: var(--gray-1);
-    }
-    .supplier .cta-block {
-      background: var(--red);
-      padding: clamp(40px, 6vw, 64px);
-      margin-top: clamp(40px, 5vw, 56px);
-      text-align: center;
-    }
-    .supplier .cta-block h3 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800;
-      font-size: clamp(1.65rem, 3vw, 2.5rem);
-      line-height: 1.1; letter-spacing: 0.02em;
-      text-transform: uppercase; color: var(--white);
-      margin-bottom: 16px;
-    }
-    .supplier .cta-block p {
-      color: rgba(255,255,255,0.92);
-      max-width: 56ch; margin: 0 auto 28px;
-      font-size: 1.05rem;
-    }
-    .cta-email {
-      display: inline-flex; align-items: center; gap: 12px;
-      padding: 14px 28px;
-      background: var(--white); color: var(--red);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 14px;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      transition: transform 0.15s;
-    }
-    .cta-email:hover { transform: translateY(-2px); }
-
-    .qual-list {
-      list-style: none; padding: 0;
-      margin-top: 24px;
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 14px 32px;
-    }
-    .qual-list li {
-      display: flex; gap: 12px; align-items: flex-start;
-      font-size: 1rem; line-height: 1.5;
-      color: var(--gray-5);
-    }
-    .qual-list li::before {
-      content: ''; width: 6px; height: 6px;
-      background: var(--red); border-radius: 50%;
-      flex-shrink: 0; margin-top: 9px;
-    }
-
-    /* CONTACT */
+    /* CONTACT / CTA */
     .contact {
-      background: var(--black);
+      background: var(--gray-1);
       text-align: center;
     }
     .contact-options {
@@ -296,7 +323,7 @@
     }
     .contact-card:hover {
       border-color: var(--red);
-      background: var(--gray-1);
+      background: var(--gray-2);
     }
     .contact-card .card-label {
       font-family: 'Barlow Condensed', sans-serif;
@@ -328,23 +355,26 @@
     @media (max-width: 900px) {
       .cap-grid { grid-template-columns: 1fr; gap: 0; }
       .split { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: 1fr; }
+      .specs-grid { grid-template-columns: 1fr 1fr; }
       .contact-options { grid-template-columns: 1fr; }
-      .qual-list { grid-template-columns: 1fr; }
+      .cat-list .name { min-width: 90px; }
     }
     @media (max-width: 600px) {
       .topbar a.home { font-size: 12px; }
       .btn { padding: 9px 14px; font-size: 11px; letter-spacing: 0.14em; }
       .ind-item { padding: 12px 16px; border-right: none; }
+      .specs-grid { grid-template-columns: 1fr; }
     }
 
     /* PRINT */
     @media print {
-      .topbar, .hero-cta, .cta-email { display: none; }
+      .topbar, .hero-cta { display: none; }
       body { background: white; color: black; }
       section { padding: 24px; page-break-inside: avoid; }
       .hero { min-height: auto; padding: 24px; }
       .hero-bg { display: none; }
-      h1, h2, h3, .ind-item { color: black; }
+      h1, h2, h3, .ind-item, .cat-list .name, .spec-card .spec-value { color: black; }
     }
   </style>
 </head>
@@ -363,9 +393,9 @@
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-content">
       <img src="assets/trident-original-bigger.png" alt="Trident Industries" class="hero-logo" />
-      <div class="hero-eyebrow">Brochure</div>
+      <div class="hero-eyebrow">Capabilities Catalog</div>
       <h1>Advanced Manufacturing for the Mission</h1>
-      <p class="lede">Single-source precision manufacturing for aerospace, defense, and weapon systems. From 5-axis CNC machining to metal 3D printing, we deliver hardware that meets the standards of the industries that demand zero compromise.</p>
+      <p class="lede">Single-source precision manufacturing for aerospace, defense, and weapon systems. From 5-axis CNC machining to metal 3D printing — explore our full services, materials, and machine capabilities.</p>
       <div class="hero-cta">
         <a href="mailto:sales@tridentindustriesinc.com" class="btn btn--red">Email Us</a>
         <a href="tel:+19492957541" class="btn btn--ghost">(949) 295-7541</a>
@@ -381,15 +411,15 @@
       <div class="cap-grid">
         <div class="cap-card">
           <h3>Advanced System Engineering</h3>
-          <p>Trident Industries' engineering team specializes in cutting-edge hardware solutions that address the modernization priorities of the Department of Defense (DoD), including classified initiatives.</p>
+          <p>Cutting-edge hardware solutions that address the modernization priorities of the Department of Defense (DoD), including classified initiatives.</p>
         </div>
         <div class="cap-card">
           <h3>Advanced Manufacturing</h3>
-          <p>Trident boasts a substantial manufacturing facility dedicated to the fabrication of ground support hardware and mission-critical components.</p>
+          <p>Substantial in-house manufacturing facility dedicated to the fabrication of ground support hardware and mission-critical components.</p>
         </div>
         <div class="cap-card">
           <h3>Integration &amp; Enhancement</h3>
-          <p>Trident is at the forefront of developing cutting-edge defense hardware, including advanced land systems and a wide array of innovative integrated solutions.</p>
+          <p>Developing next-generation defense hardware, including advanced land systems and a wide array of innovative integrated solutions.</p>
         </div>
       </div>
     </div>
@@ -405,11 +435,132 @@
       </div>
       <ul class="services-list">
         <li>3-, 4- &amp; 5-Axis CNC Milling</li>
+        <li>CNC Turning &amp; Lathe Work</li>
         <li>Metal &amp; Polymer 3D Printing</li>
         <li>3D Scanning &amp; Inspection</li>
         <li>Reverse Engineering</li>
         <li>CAD / CAM Design &amp; Engineering</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- MATERIALS + MACHINES CATALOG -->
+  <section class="catalog">
+    <div class="container">
+      <span class="label">Catalog</span>
+      <h2 class="section-title">Materials &amp; Machines</h2>
+      <p class="section-intro">A working reference of the materials we machine and the equipment we run — from prototype builds to production runs.</p>
+
+      <div class="cat-grid">
+        <!-- MATERIALS -->
+        <div class="cat-block">
+          <h3>Materials</h3>
+
+          <div class="cat-subhead">Aluminum</div>
+          <ul class="cat-list">
+            <li><span class="name">6061-T6</span><span class="desc">General-purpose aerospace alloy — strong, weldable, corrosion-resistant</span></li>
+            <li><span class="name">7075-T6</span><span class="desc">High-strength structural — airframes and high-stress components</span></li>
+            <li><span class="name">2024-T351</span><span class="desc">Excellent fatigue resistance for aerospace structures</span></li>
+          </ul>
+
+          <div class="cat-subhead">Stainless Steel</div>
+          <ul class="cat-list">
+            <li><span class="name">303 / 304</span><span class="desc">General machining and food/medical-grade applications</span></li>
+            <li><span class="name">316</span><span class="desc">Marine and chemical-resistant environments</span></li>
+            <li><span class="name">17-4 PH</span><span class="desc">Precipitation-hardened — high strength and corrosion resistance</span></li>
+            <li><span class="name">15-5 PH</span><span class="desc">Aerospace structural and weapon system components</span></li>
+          </ul>
+
+          <div class="cat-subhead">Titanium</div>
+          <ul class="cat-list">
+            <li><span class="name">Grade 2</span><span class="desc">Commercially pure — corrosion-resistant, weldable</span></li>
+            <li><span class="name">Ti-6Al-4V (Grade 5)</span><span class="desc">Aerospace workhorse — high strength-to-weight</span></li>
+          </ul>
+
+          <div class="cat-subhead">Superalloys</div>
+          <ul class="cat-list">
+            <li><span class="name">Inconel 625 / 718</span><span class="desc">High-temperature, oxidation-resistant — engine and exhaust components</span></li>
+            <li><span class="name">Hastelloy</span><span class="desc">Extreme corrosion resistance for harsh environments</span></li>
+          </ul>
+
+          <div class="cat-subhead">Other Metals</div>
+          <ul class="cat-list">
+            <li><span class="name">Brass &amp; Bronze</span><span class="desc">Bushings, fittings, decorative hardware</span></li>
+            <li><span class="name">Copper</span><span class="desc">Electrical and thermal applications</span></li>
+            <li><span class="name">Tool Steels</span><span class="desc">A2, D2, S7 — fixturing, dies, and wear surfaces</span></li>
+          </ul>
+
+          <div class="cat-subhead">Engineering Plastics</div>
+          <ul class="cat-list">
+            <li><span class="name">Delrin / Acetal</span><span class="desc">Dimensionally stable, low-friction parts</span></li>
+            <li><span class="name">PEEK</span><span class="desc">High-performance, chemical and heat resistant</span></li>
+            <li><span class="name">Ultem (PEI)</span><span class="desc">Aerospace-grade polymer for printed and machined parts</span></li>
+            <li><span class="name">Nylon / ABS</span><span class="desc">General-purpose machining and 3D printing</span></li>
+          </ul>
+        </div>
+
+        <!-- MACHINES -->
+        <div class="cat-block">
+          <h3>Machine Capabilities</h3>
+
+          <div class="cat-subhead">CNC Milling</div>
+          <ul class="cat-list">
+            <li><span class="name">3-Axis VMC</span><span class="desc">Production milling — flat plates, brackets, housings</span></li>
+            <li><span class="name">4-Axis</span><span class="desc">Indexed and continuous rotary work — complex profiles around a centerline</span></li>
+            <li><span class="name">5-Axis</span><span class="desc">Simultaneous machining for compound contours, undercuts, and aerospace components</span></li>
+            <li><span class="name">Bridge Mills</span><span class="desc">Large-envelope plate and structural work</span></li>
+          </ul>
+
+          <div class="cat-subhead">CNC Turning</div>
+          <ul class="cat-list">
+            <li><span class="name">2-Axis Lathe</span><span class="desc">Standard turning operations</span></li>
+            <li><span class="name">Live-Tool Lathe</span><span class="desc">Turning + milling in one setup — shafts with cross-holes, flats, and slots</span></li>
+            <li><span class="name">Swiss Lathe</span><span class="desc">Small-diameter, high-precision parts in long production runs</span></li>
+          </ul>
+
+          <div class="cat-subhead">EDM</div>
+          <ul class="cat-list">
+            <li><span class="name">Wire EDM</span><span class="desc">Tight-tolerance profiles in hardened materials</span></li>
+            <li><span class="name">Sinker EDM</span><span class="desc">Pockets, ribs, and intricate features in tool steels</span></li>
+          </ul>
+
+          <div class="cat-subhead">Additive (3D Printing)</div>
+          <ul class="cat-list">
+            <li><span class="name">DMLS / SLM</span><span class="desc">Metal 3D printing — Inconel, titanium, stainless, aluminum</span></li>
+            <li><span class="name">FDM / SLA</span><span class="desc">Polymer prototypes, tooling, fixtures</span></li>
+          </ul>
+
+          <div class="cat-subhead">Inspection &amp; Quality</div>
+          <ul class="cat-list">
+            <li><span class="name">CMM</span><span class="desc">Coordinate-measuring machines for dimensional verification</span></li>
+            <li><span class="name">3D Scanning</span><span class="desc">Reverse engineering and first-article inspection</span></li>
+            <li><span class="name">Surface &amp; GD&amp;T</span><span class="desc">Profilometry and full geometric dimensioning &amp; tolerancing</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CAPACITIES / TOLERANCES -->
+      <div style="margin-top: clamp(40px, 5vw, 56px);">
+        <span class="label" style="font-size: 11px;">Capacities &amp; Tolerances</span>
+      </div>
+      <div class="specs-grid">
+        <div class="spec-card">
+          <div class="spec-value">±0.0002"</div>
+          <div class="spec-label">Tightest Tolerance</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-value">60" × 30" × 30"</div>
+          <div class="spec-label">Max Part Envelope</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-value">5-Axis</div>
+          <div class="spec-label">Simultaneous Machining</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-value">Prototype → Production</div>
+          <div class="spec-label">Run Sizes</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -428,37 +579,12 @@
     </div>
   </section>
 
-  <!-- SUPPLIER PARTNERSHIP -->
-  <section class="supplier">
-    <div class="container">
-      <span class="label">Supplier Partnership</span>
-      <h2 class="section-title">Partner With Trident</h2>
-      <p class="section-intro">Trident partners with vendors who share our standards for precision, reliability, and on-time delivery. We work with suppliers of raw materials, tooling, fasteners, hardware, finishing, and inspection services who meet our quality systems and documentation requirements.</p>
-
-      <div style="margin-top: 8px;">
-        <span class="label" style="font-size: 11px;">What We Look For</span>
-      </div>
-      <ul class="qual-list">
-        <li>Consistent quality and process control</li>
-        <li>Aerospace / defense traceability and documentation</li>
-        <li>Reliable lead times and clear communication</li>
-        <li>Competitive pricing without compromise</li>
-      </ul>
-
-      <div class="cta-block">
-        <h3>Become a Supplier</h3>
-        <p>Send your line card, capabilities, and certifications to our sourcing team. We respond to qualified inquiries within 48 hours.</p>
-        <a href="mailto:sales@tridentindustriesinc.com?subject=Supplier%20Inquiry" class="cta-email">sales@tridentindustriesinc.com</a>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
   <section class="contact">
     <div class="container">
       <span class="label">Get in Touch</span>
       <h2 class="section-title">Let's Build Something Together</h2>
-      <p class="section-intro" style="margin-left: auto; margin-right: auto;">For project inquiries, supplier registration, or general questions — pick your channel.</p>
+      <p class="section-intro" style="margin-left: auto; margin-right: auto;">For project inquiries, RFQs, or general questions — pick your channel.</p>
       <div class="contact-options">
         <a href="mailto:sales@tridentindustriesinc.com" class="contact-card">
           <div class="card-label">Email</div>
