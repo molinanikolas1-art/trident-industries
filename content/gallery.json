@@ -1,15 +1,15 @@
 {
   "page_label": "Our Work",
   "page_title": "Parts Gallery",
-  "page_description": "A selection of components manufactured at Trident Industries \u2014 from production CNC runs to complex additive parts.",
+  "page_description": "A selection of components manufactured at Trident Industries — from production CNC runs to complex additive parts.",
   "items": [
     {
       "image": "assets/printed-housing.jpg",
       "label": "3D Printed Housing"
     },
     {
-      "image": "assets/shop-floor.jpg",
-      "label": "Aluminum Components"
+      "image": "assets/sr-impeller.jpg",
+      "label": "Additive Impeller"
     },
     {
       "image": "assets/untitled-design_14.png",
@@ -20,36 +20,20 @@
       "label": "CNC Machined Parts"
     },
     {
-      "label": "High-strength polymer jig",
-      "image": "assets/img_1557.png"
+      "image": "assets/sr-bracket-bolts.jpg",
+      "label": "Mounting Bracket"
     },
     {
-      "label": "Formed sheet-metal gussets",
-      "image": "assets/img_2113.jpg"
+      "image": "assets/sr-bracket-pair.jpg",
+      "label": "Polymer & Machined Pair"
     },
     {
-      "image": "assets/img_1559.png",
-      "label": "Countersunk mounting brackets"
+      "image": "assets/sr-cnc-octagonal.jpg",
+      "label": "Multi-Part Assembly"
     },
     {
-      "image": "assets/img_1561.png",
-      "label": "CNC surfacing toolpaths"
-    },
-    {
-      "label": "Precision milled clevis blocks",
-      "image": "assets/img_2096.jpg"
-    },
-    {
-      "image": "assets/img_3231.jpg",
-      "label": "Pocketed billet truss"
-    },
-    {
-      "image": "assets/img_3714.jpg",
-      "label": "Offroad light mount"
-    },
-    {
-      "image": "assets/img_3626.jpg",
-      "label": "Four-axis machined mount"
+      "image": "assets/sr-flange-bushings.jpg",
+      "label": "Machined Flanges"
     },
     {
       "image": "assets/untitled-design.png",
@@ -72,12 +56,20 @@
       "label": "Wafer-Style Butterfly Valve"
     },
     {
-      "image": "assets/lever-butterfly-valve.jpg",
-      "label": "Lever-Operated Valve"
+      "image": "assets/sr-blue-butterfly.jpg",
+      "label": "Lever Butterfly Valve"
     },
     {
-      "image": "assets/ball-valve.jpg",
-      "label": "Ball Valve with Lever Handle"
+      "image": "assets/sr-ball-valve-red.jpg",
+      "label": "Ball Valve"
+    },
+    {
+      "image": "assets/sr-yellow-zpipe.jpg",
+      "label": "Bent Manifold"
+    },
+    {
+      "image": "assets/sr-yellow-hook.jpg",
+      "label": "Lifting Hook"
     }
   ],
   "title_size": "Default",
