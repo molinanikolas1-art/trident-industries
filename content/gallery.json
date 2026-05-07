@@ -70,6 +70,10 @@
     {
       "image": "assets/sr-yellow-hook.jpg",
       "label": "Lifting Hook"
+    },
+    {
+      "image": "assets/sr-turbine-shaft.jpg",
+      "label": "Turbine Impeller & Shaft"
     }
   ],
   "title_size": "Default",
