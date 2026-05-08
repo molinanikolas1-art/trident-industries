@@ -609,14 +609,14 @@ button { cursor: pointer; background: none; border: none; }
    ============================================================ */
 .full-bleed {
   position: relative;
-  height: clamp(300px, 40vw, 550px);
+  height: clamp(440px, 60vw, 820px);
   overflow: hidden;
 }
 .full-bleed img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 35%;
 }
 .full-bleed-overlay {
   position: absolute;
