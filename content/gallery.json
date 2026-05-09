@@ -74,6 +74,10 @@
     {
       "image": "assets/sr-turbine-shaft.jpg",
       "label": "Turbine Impeller & Shaft"
+    },
+    {
+      "image": "assets/sr-aerospace-frame.jpg",
+      "label": "Aerospace Frame Rib"
     }
   ],
   "title_size": "Default",
