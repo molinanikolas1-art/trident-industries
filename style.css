@@ -609,7 +609,9 @@ button { cursor: pointer; background: none; border: none; }
    ============================================================ */
 .full-bleed {
   position: relative;
-  height: clamp(440px, 60vw, 820px);
+  /* Match the natural ~2.3:1 aspect ratio of the missile image so no cropping/zooming */
+  aspect-ratio: 2.3 / 1;
+  max-height: 720px;
   overflow: hidden;
 }
 .full-bleed img {
@@ -617,6 +619,7 @@ button { cursor: pointer; background: none; border: none; }
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  display: block;
 }
 .full-bleed-overlay {
   position: absolute;
