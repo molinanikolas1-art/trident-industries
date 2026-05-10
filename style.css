@@ -608,17 +608,23 @@ button { cursor: pointer; background: none; border: none; }
    FULL-BLEED DIVIDER
    ============================================================ */
 .full-bleed {
-  position: relative;
-  width: 100%;
-  height: clamp(380px, 45vw, 620px);
-  overflow: hidden;
+  position: relative !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  height: clamp(380px, 45vw, 620px) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
 }
 .full-bleed img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .full-bleed-overlay {
   position: absolute;
