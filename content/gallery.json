@@ -48,16 +48,8 @@
       "label": "Turned and milled adapters"
     },
     {
-      "image": "assets/butterfly-valve-assembly.jpg",
-      "label": "Butterfly Valve Assembly"
-    },
-    {
       "image": "assets/wafer-butterfly-valve.jpg",
       "label": "Wafer-Style Butterfly Valve"
-    },
-    {
-      "image": "assets/sr-blue-butterfly.jpg",
-      "label": "Lever Butterfly Valve"
     },
     {
       "image": "assets/sr-ball-valve-red.jpg",
@@ -74,10 +66,6 @@
     {
       "image": "assets/sr-turbine-shaft.jpg",
       "label": "Turbine Impeller & Shaft"
-    },
-    {
-      "image": "assets/sr-aerospace-frame.jpg",
-      "label": "Aerospace Frame Rib"
     }
   ],
   "title_size": "Default",
