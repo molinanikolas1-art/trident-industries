@@ -609,9 +609,8 @@ button { cursor: pointer; background: none; border: none; }
    ============================================================ */
 .full-bleed {
   position: relative;
-  /* Match the natural ~2.3:1 aspect ratio of the missile image so no cropping/zooming */
-  aspect-ratio: 2.3 / 1;
-  max-height: 720px;
+  width: 100%;
+  height: clamp(380px, 45vw, 620px);
   overflow: hidden;
 }
 .full-bleed img {
