@@ -49,23 +49,23 @@
     },
     {
       "image": "assets/wafer-butterfly-valve.jpg",
-      "label": "Wafer-Style Butterfly Valve"
+      "label": "Models"
     },
     {
       "image": "assets/sr-ball-valve-red.jpg",
-      "label": "Ball Valve"
+      "label": "Models"
     },
     {
       "image": "assets/sr-yellow-zpipe.jpg",
-      "label": "Bent Manifold"
+      "label": "Models"
     },
     {
       "image": "assets/sr-yellow-hook.jpg",
-      "label": "Lifting Hook"
+      "label": "Models"
     },
     {
       "image": "assets/sr-turbine-shaft.jpg",
-      "label": "Turbine Impeller & Shaft"
+      "label": "Print Models"
     }
   ],
   "title_size": "Default",
