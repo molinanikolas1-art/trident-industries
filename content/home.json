@@ -16,20 +16,7 @@
   "cta_title": "Ready to Build Something Exceptional?",
   "printing_label": "Additive Manufacturing",
   "what_we_do_text": "From complex 5-axis CNC milling to metal 3D printing — Trident Industries is a single-source manufacturer for the industries that demand zero compromise. Every part we deliver is a direct reflection of our commitment to manufacturing excellence.",
-  "gallery_strip": [
-    {
-      "image": "assets/untitled-design_22.png",
-      "label": "CNC Milling"
-    },
-    {
-      "image": "assets/untitled-design.png",
-      "label": "3D Printing"
-    },
-    {
-      "image": "assets/scanning-home.jpg",
-      "label": "3D Scanning"
-    }
-  ],
+  "gallery_strip": [],
   "hero_title_size": "Default",
   "button_size": "Default",
   "hero_cta_primary": "View Capabilities",
