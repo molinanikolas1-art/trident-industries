@@ -56,7 +56,12 @@
     }));
   }
 
-  /* ---- Hero bg image disabled ---- */
+  /* ---- Hero bg ken-burns ---- */
+  const heroBg = document.getElementById('heroBg');
+  if (heroBg) {
+    heroBg.style.backgroundImage = "url('assets/missile-flight.jpg')";
+    setTimeout(() => heroBg.classList.add('loaded'), 100);
+  }
 
   /* ---- Scroll reveal ---- */
   const reveals = document.querySelectorAll('.reveal');
