@@ -558,23 +558,6 @@ button { cursor: pointer; background: none; border: none; }
   background: rgba(8,8,8,0.2);
 }
 
-/* Shop floor (Fives Macbormill) - sized smaller within its panel */
-.split--shop .split-image {
-  background: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: clamp(20px, 4vw, 60px);
-}
-.split--shop .split-image img {
-  width: auto;
-  height: auto;
-  max-width: 85%;
-  max-height: 85%;
-  object-fit: contain;
-  position: relative;
-}
-
 .split-content {
   display: flex;
   flex-direction: column;
