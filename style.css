@@ -799,14 +799,18 @@ button { cursor: pointer; background: none; border: none; }
 }
 .about-image {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  display: flex;
+  justify-content: flex-end;
 }
 .about-image img {
-  width: 100%;
+  width: 115%;
+  max-width: none;
   height: auto;
   display: block;
   object-fit: cover;
   object-position: center;
+  margin-right: clamp(-80px, -4vw, -20px);
 }
 
 /* ============================================================
