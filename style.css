@@ -760,8 +760,8 @@ button { cursor: pointer; background: none; border: none; }
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: clamp(var(--space-8), 4vw, var(--space-16));
+  grid-template-columns: 1fr 2.2fr;
+  gap: clamp(var(--space-6), 3vw, var(--space-12));
   align-items: center;
 }
 .about-title {
