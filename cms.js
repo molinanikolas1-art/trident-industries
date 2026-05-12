@@ -22,7 +22,7 @@
     if(d.surface_color)root.style.setProperty('--gray-1',d.surface_color);
     if(d.text_color)root.style.setProperty('--white',d.text_color);
     if(d.nav_logo)document.querySelectorAll('.logo-full').forEach(function(i){i.src='/'+d.nav_logo;});
-    if(d.hero_image){var hb=document.getElementById('heroBg');if(hb)hb.style.backgroundImage="url('/"+d.hero_image+"')";}
+    /* hero image disabled */
     if(d.hero_overlay_opacity){var ov=document.querySelector('.hero-overlay');if(ov)ov.style.background='linear-gradient(to top,rgba(8,8,8,'+d.hero_overlay_opacity+') 0%,rgba(8,8,8,0.5) 40%,rgba(8,8,8,0.2) 80%,rgba(8,8,8,0.1) 100%)';}
     if(d.hero_watermark){var wm=document.querySelector('.hero-watermark span');if(wm)wm.textContent=d.hero_watermark;}
 
