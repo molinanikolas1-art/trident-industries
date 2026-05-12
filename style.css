@@ -803,18 +803,10 @@ button { cursor: pointer; background: none; border: none; }
 }
 .about-image img {
   width: 100%;
-  aspect-ratio: 4/3;
+  height: auto;
+  display: block;
   object-fit: cover;
   object-position: center;
-}
-.about-image::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  height: 4px;
-  background: var(--red);
 }
 
 /* ============================================================
