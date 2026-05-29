@@ -1,70 +1,29 @@
 {
   "page_label": "Our Work",
   "page_title": "Parts Gallery",
-  "page_description": "A selection of components manufactured at Trident Industries — from production CNC runs to complex additive parts.",
+  "page_description": "A selection of components manufactured at Trident Industries — from CAD models to additive prototypes to precision-machined production hardware.",
   "items": [
-    {
-      "image": "assets/printed-housing.jpg",
-      "label": "3D Printed Housing"
-    },
-    {
-      "image": "assets/sr-impeller.jpg",
-      "label": "Additive Impeller"
-    },
-    {
-      "image": "assets/untitled-design_14.png",
-      "label": "Precision Brackets"
-    },
-    {
-      "image": "assets/brackets-standing.jpg",
-      "label": "CNC Machined Parts"
-    },
-    {
-      "image": "assets/sr-bracket-bolts.jpg",
-      "label": "Mounting Bracket"
-    },
-    {
-      "image": "assets/sr-bracket-pair.jpg",
-      "label": "Polymer & Machined Pair"
-    },
-    {
-      "image": "assets/sr-cnc-octagonal.jpg",
-      "label": "Multi-Part Assembly"
-    },
-    {
-      "image": "assets/sr-flange-bushings.jpg",
-      "label": "Machined Flanges"
-    },
-    {
-      "image": "assets/untitled-design.png",
-      "label": "Multi-axis organic junction"
-    },
-    {
-      "image": "assets/untitled-design_7.png",
-      "label": "Skeletonized brace extrusion"
-    },
-    {
-      "image": "assets/untitled-design_11.png",
-      "label": "Turned and milled adapters"
-    },
-    {
-      "image": "assets/sr-ball-valve-red.jpg",
-      "label": "Models"
-    },
-    {
-      "image": "assets/sr-yellow-zpipe.jpg",
-      "label": "Models"
-    },
-    {
-      "image": "assets/sr-yellow-hook.jpg",
-      "label": "Models"
-    },
-    {
-      "image": "assets/sr-turbine-shaft.jpg",
-      "label": "Print Models"
-    }
-  ],
-  "title_size": "Default",
-  "image_height": "Default",
-  "description_size": "Default"
+    { "image": "assets/gal-model-ball-valve-red.jpg",      "label": "Model" },
+    { "image": "assets/gal-model-bracket-green.jpg",       "label": "Model" },
+    { "image": "assets/gal-model-bracket-truss.jpg",       "label": "Model" },
+    { "image": "assets/gal-model-hook-yellow.jpg",         "label": "Model" },
+    { "image": "assets/gal-model-valve-blue.jpg",          "label": "Model" },
+
+    { "image": "assets/gal-print-clamp-pair.jpg",          "label": "3D Printed" },
+    { "image": "assets/gal-print-turbine-peek.jpg",        "label": "3D Printed" },
+    { "image": "assets/gal-print-bracket-lattice.jpg",     "label": "3D Printed" },
+    { "image": "assets/gal-print-elbow-fitting.jpg",       "label": "3D Printed" },
+
+    { "image": "assets/gal-metal-aero-panel-01.jpg",       "label": "Metal Part" },
+    { "image": "assets/gal-metal-aero-panel-pair.jpg",     "label": "Metal Part" },
+    { "image": "assets/gal-metal-brackets-trio.jpg",       "label": "Metal Part" },
+    { "image": "assets/gal-metal-bracket-machined.jpg",    "label": "Metal Part" },
+    { "image": "assets/gal-metal-trapezoid-housing.jpg",   "label": "Metal Part" },
+    { "image": "assets/gal-metal-arc-segments.jpg",        "label": "Metal Part" },
+    { "image": "assets/gal-metal-lever-arm.jpg",           "label": "Metal Part" },
+    { "image": "assets/gal-metal-complex-machined.jpg",    "label": "Metal Part" },
+    { "image": "assets/gal-metal-arches-trio.jpg",         "label": "Metal Part" },
+    { "image": "assets/gal-metal-aero-shroud.jpg",         "label": "Metal Part" },
+    { "image": "assets/gal-metal-fixtures-trio.jpg",       "label": "Metal Part" }
+  ]
 }
